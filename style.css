@@ -5,4 +5,13 @@
 
 body {
     font-family: "Bubbly Mess", sans-serif;
+    background: #c1e8e8;
+    background: linear-gradient(0deg,rgba(193, 232, 232, 1) 0%, rgba(177, 203, 230, 1) 100%);
+}
+
+h1 {
+    margin: 4px;
+    padding: 4px;
+    color: #97c2c1;
+    -webkit-text-stroke: 1px #76a5af;
 }
