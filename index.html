@@ -10,31 +10,31 @@
 
     <body>
         <div id="top-bar">
-            <p style="margin-left: 20px;">
+            <p id="welcomeopen">
                 GablOS
             </p>
             
             <p id="time-element" style="margin-right: 20px;">
-                16.06.2026 17:42 
+                loading time
             </p>
         </div>
 
-        <div class="window">
-        <img style="width:60px; height:20%" src="images/pixel-art/frog.png" alt="Frog pixel-art"/>
-        <h1>gablOS</h1>
-        <p>Hello World! <br> Meet me, Gabl, a guy from Austria doing much different stuff. I am trying to learn how to make fun Games, Art and Assets for people to enjoy and this is why I wanted to create this Website as my Portfolio to display some of my work! :D</p>
+        <div id="welcome" class="window" style="top: calc(50% - 90px); left: calc(50% - 180px); top: 50%; left: 50%; width: 40%;">
+             <div id="welcomeheader">
+                <div class="closebutton"></div>
+                <p style="padding: 1.5%"></p>
+            </div>
 
-        <a href="https://gabl18.itch.io/">https://gabl18.itch.io/</a>
+            <div style="padding:10px">
+                <img style="width:60px; height:60px" src="images/pixel-art/frog.png" alt="Frog pixel-art"/>
+                <h1>gablOS</h1>
+                <p>Hello World! <br> Meet me, Gabl, a guy from Austria doing much different stuff. I am trying to learn how to make fun Games, Art and Assets for people to enjoy and this is why I wanted to create this Website as my Portfolio to display some of my work! :D</p>
+
+                <a href="https://gabl18.itch.io/">https://gabl18.itch.io/</a>
+            </div>
         </div>
     
-        <script>
-        function updateTime() {
-            var currentTime = new Date().toLocaleString('en-gb');
-            var timeText = document.querySelector("#time-element");
-            timeText.innerHTML = currentTime
-        }
-        setInterval(updateTime, 1000);
-        </script>
+        <script src="script.js"></script>
 
     </body>
 </html>
