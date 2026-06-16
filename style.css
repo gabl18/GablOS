@@ -5,13 +5,23 @@
 
 body {
     font-family: "Bubbly Mess", sans-serif;
-    background: #c1e8e8;
-    background: linear-gradient(0deg,rgba(193, 232, 232, 1) 0%, rgba(177, 203, 230, 1) 100%);
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    /*background: #c1e8e8;*/
+    /*background: linear-gradient(0deg,rgba(193, 232, 232, 1) 0%, rgba(177, 203, 230, 1) 100%);*/
 }
 
 h1 {
     margin: 4px;
-    padding: 4px;
     color: #97c2c1;
     -webkit-text-stroke: 1px #76a5af;
+}
+
+.window {
+    position: absolute; 
+    top: 50%; left: 50%; width: 40%;
+    transform: translate(-50%, -50%); background-color: rgb(193, 211, 227); 
+    border: solid;
+    border-radius: 16px; 
+    padding: 16px;
 }
