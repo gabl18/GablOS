@@ -10,12 +10,12 @@
 
     <body>
         <div id="top-bar">
-            <p>
+            <p style="margin-left: 20px;">
                 GablOS
             </p>
-
-            <p>
-                16.06.2026 17:42
+            
+            <p id="time-element" style="margin-right: 20px;">
+                16.06.2026 17:42 
             </p>
         </div>
 
@@ -26,6 +26,15 @@
 
         <a href="https://gabl18.itch.io/">https://gabl18.itch.io/</a>
         </div>
+    
+        <script>
+        function updateTime() {
+            var currentTime = new Date().toLocaleString();
+            var timeText = document.querySelector("#time-element");
+            timeText.innerHTML = currentTime
+        }
+        setInterval(updateTime, 1000);
+        </script>
 
     </body>
 </html>
