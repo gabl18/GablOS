@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Bubbly Mess"; 
+  src: url("font/BubblyMess.ttf") format("truetype");
+}
+
+body {
+    font-family: "Bubbly Mess", sans-serif;
+}
