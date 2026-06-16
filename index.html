@@ -29,7 +29,7 @@
     
         <script>
         function updateTime() {
-            var currentTime = new Date().toLocaleString();
+            var currentTime = new Date().toLocaleString('en-gb');
             var timeText = document.querySelector("#time-element");
             timeText.innerHTML = currentTime
         }
