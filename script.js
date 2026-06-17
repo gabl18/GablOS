@@ -10,6 +10,8 @@ function updateTime() {
 
 // Make the DIV element draggable:
 dragElement(document.getElementById("welcome"));
+dragElement(document.querySelector("#aboutMe"));
+dragElement(document.querySelector("#notes"))
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
@@ -66,8 +68,16 @@ function dragElement(element) {
 
 
 var welcomeScreen = document.querySelector("#welcome")
-var welcomeScreenClose = document.querySelector(".closebutton")
+var welcomeScreenClose = document.querySelector("#welcomeclose")
 var welcomeScreenOpen = document.querySelector("#welcomeopen")
+
+var aboutMeScreen = document.querySelector("#aboutMe")
+var aboutMeScreenClose = document.querySelector("#aboutMeclose")
+var aboutMeScreenOpen = document.querySelector("#aboutMeApp")
+
+var notesScreen = document.querySelector("#notes")
+var notesScreenClose = document.querySelector("#notesClose")
+var notesScreenOpen = document.querySelector("#notesApp")
 
 function closeWindow(element) {
   element.style.display = "none"
@@ -84,3 +94,151 @@ welcomeScreenClose.addEventListener("click", function() {
 welcomeScreenOpen.addEventListener("click", function() {
   openWindow(welcomeScreen);
 });
+
+
+aboutMeScreenClose.addEventListener("click", function() {
+  closeWindow(aboutMeScreen);
+});
+
+aboutMeScreenOpen.addEventListener("click", function() {
+  openWindow(aboutMeScreen);
+});
+
+
+notesScreenClose.addEventListener("click", function() {
+  closeWindow(notesScreen);
+});
+
+notesScreenOpen.addEventListener("click", function() {
+  openWindow(notesScreen);
+});
+
+var selectedIcon = undefined
+
+function selectIcon(element) {
+  element.classList.add("selected");
+  selectedIcon = element
+} 
+
+function deselectIcon(element) {
+  element.classList.remove("selected");
+  selectedIcon = element
+} 
+
+function handleIconTap(element) {
+  if (element.classList.contains("selected")) {
+    deselectIcon(element)
+    openWindow(window)
+  } else {
+    selectIcon(element)
+  }
+}
+
+
+
+var biggestIndex = 1;
+
+function addWindowTapHandling(element) {
+  element.addEventListener("mousedown", () =>
+    handleWindowTap(element)
+  )
+}
+
+function handleWindowTap(element) {
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+}
+
+function openWindow(element) {
+  element.style.display = "flex";
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+}
+
+var topBar = document.querySelector("#top-bar")
+
+function openWindow(element) {
+  element.style.display = "flex";
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+  topBar.style.zIndex = biggestIndex + 1;
+}
+
+function handleWindowTap(element) {
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+  topBar.style.zIndex = biggestIndex + 1;
+  deselectIcon(selectedIcon)
+}
+
+//function initializeWindow(elementName) {
+//  var screen = document.querySelector("#" + elementName)
+//  addWindowTapHandling(screen)
+//  makeClosable(elementName)
+//  dragElement(screen)
+//}
+
+//initializeWindow("aboutMeScreen")
+
+
+
+var content = [
+  {
+    title: "Welcome",
+    date: "06/28/2023",
+    content: `
+              <p contenteditable="True">
+          <span contenteditable="true">Welcome to <strong>Hacker Notes</strong>
+            </br>
+            </br>
+            <img src=""
+              style="width: 96px; border-radius: 16px" />
+            </br>
+            </br>
+
+            This is a place where I store my thoughts as they come to mind. What exactly will you find when browsing
+            through
+            these notes? As I <del>once said</del> <ins>always say</ins>
+          </span>
+        <blockquote
+          style="background-color: #F9F9F9; margin-top: 16x; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; padding: 16px; border-radius: 16px;"
+          contenteditable="true">
+          <i>Time Will Tell
+            </br>
+            ~ Thomas
+          </i>
+        </blockquote>
+        <span contenteditable="true">
+          I suppose you may see a bit of content about technology. Perhaps some insights regarding recent projects.
+          Maybe
+          even some thoughts regarding nature & tea? Go and find out!
+        </span>
+        </p>
+      `
+  },
+    {
+    title: "Sample Text",
+    date: "06/28/2023",
+    content: `
+              <p contenteditable="True">
+          Here's some sample text
+        </p>
+      `
+  }
+]
+
+function setNotesContent(index) {
+
+  var notesContent = document.querySelector("#notesContent")
+
+  notesContent.innerHTML = content[index].content
+}
+
+setNotesContent(0)
+
+function addToSideBar(index) {
+	var sidebar = document.querySelector("#sidebar");
+  var note = content[index];
+  var newDiv = document.createElement("div");
+}
+

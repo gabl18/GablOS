@@ -33,6 +33,7 @@ a:active {
     border: solid;
     border-radius: 12px; 
     flex-direction: column;
+    filter: drop-shadow(0 0 6px black); 
 }
 
 #top-bar {
@@ -49,13 +50,12 @@ a:active {
     font-size: large;
 }
 
-#welcomeheader {
+.header {
     background-color: #76a5af;
     width: 100%; 
     display: flex; 
     align-items: center; 
     cursor: grab; 
-    justify-content: right;
     border-top-left-radius: 11px; border-top-right-radius: 11px;
 }
 
@@ -67,9 +67,71 @@ a:active {
     background-color: #EC6B5E;
     border-radius: 4px; 
     border: solid 1px;
+    margin-left: auto; 
+    margin-right: 0;
 }
 
 #welcomeopen {
     cursor: pointer;
     margin-left: 20px;
+}
+
+#desktopApps {
+    padding-top: 64px; 
+    padding-left: 20px
+}
+
+.appStyling {
+    text-align: center; 
+    padding: 16px; 
+    filter: drop-shadow(0 0 10px black); 
+    width: fit-content;
+}
+
+.appText {
+    margin: 0px; 
+    color: #fff; 
+}
+
+.appImage {
+    width: 64px; 
+    height: 64px; 
+    border-radius: 2px;
+}
+
+.selected {
+    background-color: #97c2c1;
+    border-radius: 2px;
+    border: solid;
+    border-color: #76a5af;
+    border-width: 2px;
+}
+
+#welcome {
+    top: calc(50% - 90px); 
+    left: calc(50% - 180px); 
+    top: 50%; 
+    left: 50%; 
+    width: 40%;
+}
+
+#aboutMe {
+    top: 35%; 
+    left: 75%; 
+    width: 45%;
+    height: 50%;
+    display: none
+}
+
+#notes {
+    top: 35%; 
+    left: 75%; 
+    width: 45%;
+    height: 50%;
+    display: none
+}
+
+.windowTextBox {
+    overflow: auto;
+    padding:10px;
 }
