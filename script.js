@@ -11,7 +11,7 @@ function updateTime() {
 // Make the DIV element draggable:
 dragElement(document.getElementById("welcome"));
 dragElement(document.querySelector("#aboutMe"));
-dragElement(document.querySelector("#notes"))
+dragElement(document.querySelector("#art"))
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
@@ -67,178 +67,164 @@ function dragElement(element) {
 
 
 
-var welcomeScreen = document.querySelector("#welcome")
-var welcomeScreenClose = document.querySelector("#welcomeclose")
-var welcomeScreenOpen = document.querySelector("#welcomeopen")
-
-var aboutMeScreen = document.querySelector("#aboutMe")
-var aboutMeScreenClose = document.querySelector("#aboutMeclose")
-var aboutMeScreenOpen = document.querySelector("#aboutMeApp")
-
-var notesScreen = document.querySelector("#notes")
-var notesScreenClose = document.querySelector("#notesClose")
-var notesScreenOpen = document.querySelector("#notesApp")
-
-function closeWindow(element) {
-  element.style.display = "none"
-}
-
-function openWindow(element) {
-  element.style.display = "flex"
-}
-
-welcomeScreenClose.addEventListener("click", function() {
-  closeWindow(welcomeScreen);
-});
-
-welcomeScreenOpen.addEventListener("click", function() {
-  openWindow(welcomeScreen);
-});
-
-
-aboutMeScreenClose.addEventListener("click", function() {
-  closeWindow(aboutMeScreen);
-});
-
-aboutMeScreenOpen.addEventListener("click", function() {
-  openWindow(aboutMeScreen);
-});
-
-
-notesScreenClose.addEventListener("click", function() {
-  closeWindow(notesScreen);
-});
-
-notesScreenOpen.addEventListener("click", function() {
-  openWindow(notesScreen);
-});
-
-var selectedIcon = undefined
-
-function selectIcon(element) {
-  element.classList.add("selected");
-  selectedIcon = element
-} 
-
-function deselectIcon(element) {
-  element.classList.remove("selected");
-  selectedIcon = element
-} 
-
-function handleIconTap(element) {
-  if (element.classList.contains("selected")) {
-    deselectIcon(element)
-    openWindow(window)
-  } else {
-    selectIcon(element)
-  }
-}
-
-
-
+// Globaler Zähler für die Fenster-Reihenfolge
 var biggestIndex = 1;
+var topBar = document.querySelector("#top-bar");
 
-function addWindowTapHandling(element) {
-  element.addEventListener("mousedown", () =>
-    handleWindowTap(element)
-  )
+
+function openWindow(windowElement) {
+  windowElement.style.display = "flex";
+  biggestIndex++;
+  windowElement.style.zIndex = biggestIndex;
 }
 
-function handleWindowTap(element) {
-  biggestIndex++;  // Increment biggestIndex by 1
-  element.style.zIndex = biggestIndex;
+function closeWindow(windowElement) {
+  windowElement.style.display = "none";
 }
 
-function openWindow(element) {
-  element.style.display = "flex";
-  biggestIndex++;  // Increment biggestIndex by 1
-  element.style.zIndex = biggestIndex;
+function focusWindow(windowElement) {
+  biggestIndex++;
+  windowElement.style.zIndex = biggestIndex;
 }
 
-var topBar = document.querySelector("#top-bar")
+// Fenster nach vorn
+document.querySelectorAll(".window").forEach(function(win) {
+  win.addEventListener("mousedown", function() {
+    focusWindow(win);
+  });
+});
 
-function openWindow(element) {
-  element.style.display = "flex";
-  biggestIndex++;  // Increment biggestIndex by 1
-  element.style.zIndex = biggestIndex;
-  topBar.style.zIndex = biggestIndex + 1;
+// Close-Button automatisch finden
+document.querySelectorAll(".closebutton").forEach(function(button) {
+  button.addEventListener("click", function(e) {
+    // e.target ist der Button. .closest(".window") sucht das Fenster
+    var currentWindow = e.target.closest(".window");
+    closeWindow(currentWindow);
+    e.stopPropagation();
+  });
+});
+
+// dynamisch das Fenster, das in "data-window" steht
+document.querySelectorAll(".appStyling").forEach(function(app) {
+  app.addEventListener("click", function() {
+    var windowId = app.getAttribute("data-window");
+    var targetWindow = document.getElementById(windowId);
+    
+    if (targetWindow) {
+      openWindow(targetWindow);
+    }
+  });
+});
+
+// Sonderfall
+var welcomeOpenTrigger = document.querySelector("#welcomeopen");
+if (welcomeOpenTrigger) {
+  welcomeOpenTrigger.addEventListener("click", function() {
+    openWindow(document.getElementById("welcome"));
+  });
 }
-
-function handleWindowTap(element) {
-  biggestIndex++;  // Increment biggestIndex by 1
-  element.style.zIndex = biggestIndex;
-  topBar.style.zIndex = biggestIndex + 1;
-  deselectIcon(selectedIcon)
-}
-
-//function initializeWindow(elementName) {
-//  var screen = document.querySelector("#" + elementName)
-//  addWindowTapHandling(screen)
-//  makeClosable(elementName)
-//  dragElement(screen)
-//}
-
-//initializeWindow("aboutMeScreen")
-
 
 
 var content = [
   {
-    title: "Welcome",
-    date: "06/28/2023",
+    title: "Overwiew",
     content: `
-              <p contenteditable="True">
-          <span contenteditable="true">Welcome to <strong>Hacker Notes</strong>
-            </br>
-            </br>
-            <img src=""
-              style="width: 96px; border-radius: 16px" />
-            </br>
-            </br>
-
-            This is a place where I store my thoughts as they come to mind. What exactly will you find when browsing
-            through
-            these notes? As I <del>once said</del> <ins>always say</ins>
+        <p contenteditable="true">
+          <span>Test 1
           </span>
-        <blockquote
-          style="background-color: #F9F9F9; margin-top: 16x; margin-bottom: 16px; margin-left: 0px; margin-right: 0px; padding: 16px; border-radius: 16px;"
-          contenteditable="true">
-          <i>Time Will Tell
-            </br>
-            ~ Thomas
-          </i>
-        </blockquote>
-        <span contenteditable="true">
-          I suppose you may see a bit of content about technology. Perhaps some insights regarding recent projects.
-          Maybe
-          even some thoughts regarding nature & tea? Go and find out!
-        </span>
+          <blockquote style="background-color: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px;">
+            <i>TEST<br>TEST</i>
+          </blockquote>
         </p>
       `
   },
-    {
-    title: "Sample Text",
-    date: "06/28/2023",
+  {
+    title: "Pixel-Art",
     content: `
-              <p contenteditable="True">
-          Here's some sample text
+        <p>
+          Pixel-Art
+        </p>
+        <img class="imageDisplay" src="images/pixel-art/Computer.gif" alt="Computer pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/A Goatly Stare Main.png" alt="Goatly Stare pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/ContentWarningSmash.png" alt="Content Warning pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/Duck_Swim.gif" alt="Duck_Swim pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/frog.png" alt="frog pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/june_frog.png" alt="pride-frog pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/Ghost.gif" alt="Ghost pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/Goat.gif" alt="Goat pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/GablPixelHorror.png" alt="GablPixelHorror pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/Mario_Gab_blue.png" alt="Mario_Gab_blue pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/Jackbox Boxer Champed UP Outline Transparent.png" alt="Jackbox Boxer Champed UP pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/MelonGuyHand.png" alt="MelonGuyHand pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/Mlem_Final.png" alt="Derpy Cat pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/Repo_Covr.png" alt="Video-Game pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/Repo_McDonald.png" alt="Video-Game pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/RepoPFPPurple.png" alt="Video-Game pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/Sad-Vibes.png" alt="Forest pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/Shooter.gif" alt="Video-Game pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/Sonic Test.gif" alt="Video-Game pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/Special_Cards_Balatro_AmongUS.png" alt="Card pixel-art"/>
+      `
+  },
+  {
+    title: "Traditional Art",
+    content: `
+        <p contenteditable="true">
+          Here's some sample text. You can even type in here because contenteditable is true!
+        </p>
+      `
+  },
+  {
+    title: "Asset-Packs",
+    content: `
+        <p contenteditable="true">
+          Here's some sample text. You can even type in here because contenteditable is true!
+        </p>
+      `
+  },
+  {
+    title: "Art-Projects",
+    content: `
+        <p contenteditable="true">
+          Here's some sample text. You can even type in here because contenteditable is true!
         </p>
       `
   }
-]
+];
 
-function setNotesContent(index) {
 
-  var notesContent = document.querySelector("#notesContent")
-
-  notesContent.innerHTML = content[index].content
+function setArtContent(index) {
+  var artContent = document.querySelector("#artContent");
+  artContent.innerHTML = content[index].content;
 }
 
-setNotesContent(0)
 
 function addToSideBar(index) {
-	var sidebar = document.querySelector("#sidebar");
-  var note = content[index];
+  var sidebar = document.querySelector("#sidebar");
+  var art = content[index];
+  
+ 
   var newDiv = document.createElement("div");
+  newDiv.innerHTML = art.title;
+  newDiv.style.cursor = "pointer";
+  newDiv.style.padding = "5px";
+  newDiv.style.marginBottom = "5px";
+  newDiv.style.borderRadius = "4px";
+  newDiv.style.backgroundColor = "rgba(255,255,255,0.1)";
+
+  // Wenn man auf den Titel klickt, soll die Notiz geladen werden
+  newDiv.addEventListener("click", function() {
+    setArtContent(index);
+  });
+
+  // Ab in die Sidebar damit!
+  sidebar.appendChild(newDiv);
 }
 
+// 4. AUTOMATION: Wir gehen alle Notizen im "content"-Array durch und bauen die App auf
+for (var i = 0; i < content.length; i++) {
+  addToSideBar(i);
+}
+
+// Standardmäßig die erste Notiz anzeigen beim Start
+setArtContent(0);
