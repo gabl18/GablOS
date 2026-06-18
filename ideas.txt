@@ -2,6 +2,6 @@ Music player
 custom cursor
 
 
-topBar on top sein
 Fonts
-use selected class
+Scrolling bei Art fixen
+beim fenster oben namen von app/art stehen haben

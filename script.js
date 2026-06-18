@@ -141,15 +141,12 @@ var content = [
   {
     title: "Pixel-Art",
     content: `
-        <p>
-          Pixel-Art
-        </p>
+        <p>Pixel-Art</p>
+
         <img class="imageDisplay" src="images/pixel-art/Computer.gif" alt="Computer pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/A Goatly Stare Main.png" alt="Goatly Stare pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/ContentWarningSmash.png" alt="Content Warning pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/Duck_Swim.gif" alt="Duck_Swim pixel-art"/>
-        <img class="imageDisplay" src="images/pixel-art/frog.png" alt="frog pixel-art"/>
-        <img class="imageDisplay" src="images/pixel-art/june_frog.png" alt="pride-frog pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/Ghost.gif" alt="Ghost pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/Goat.gif" alt="Goat pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/GablPixelHorror.png" alt="GablPixelHorror pixel-art"/>
@@ -164,14 +161,45 @@ var content = [
         <img class="imageDisplay" src="images/pixel-art/Shooter.gif" alt="Video-Game pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/Sonic Test.gif" alt="Video-Game pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/Special_Cards_Balatro_AmongUS.png" alt="Card pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/frog.png" alt="frog pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/june_frog.png" alt="pride-frog pixel-art"/>
       `
   },
   {
     title: "Traditional Art",
     content: `
-        <p contenteditable="true">
-          Here's some sample text. You can even type in here because contenteditable is true!
+        <p>
+          Traditional Art
         </p>
+        <img class="imageDisplay" src="images/traditional-art/LethalCompanyThumbnail.png"/>
+        <img class="imageDisplay" src="images/traditional-art/Wolke.png" alt="test"/>
+        <img class="imageDisplay" src="images/traditional-art/Kirby.png"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (1).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (2).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (3).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (4).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (5).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (6).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (7).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (8).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (9).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (10).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (11).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (12).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/SpiderGabl.png"/>
+        <img class="imageDisplay" src="images/traditional-art/Schulblatt.png"/>
+      `
+  },
+  {
+    title: "3D-Modelling",
+    content: `
+        <p>
+          3D-Modelling
+        </p>
+        <img class="imageDisplay" src="images/3d-models/horizontal_rotierender_fisch.gif"/>
+        <img class="imageDisplay" src="images/3d-models/luffy_hat.gif"/>
+        <img class="imageDisplay" src="images/3d-models/Pokeball.gif"/>
+        <img class="imageDisplay" src="images/3d-models/Vending_Machine_Test.gif"/>
       `
   },
   {
@@ -180,14 +208,61 @@ var content = [
         <p contenteditable="true">
           Here's some sample text. You can even type in here because contenteditable is true!
         </p>
+        
+        <iframe frameborder="0" src="https://itch.io/embed/4326949?linkback=true&amp;border_width=4&amp;bg_color=ceefb8&amp;fg_color=222222&amp;link_color=37cf4b&amp;border_color=8e966c" width="100%" height="173"><a href="https://gabl18.itch.io/pixel-art-duck">Pixel Art Duck by Gabl</a></iframe>
+
+        <img class="assetImageDisplay" src="images/asset-packs/Display1.gif"/>
+        <img class="assetImageDisplay" src="images/asset-packs/Display2.gif"/>
+
+        <iframe frameborder="0" src="https://itch.io/embed/3425305?linkback=true&amp;border_width=4&amp;bg_color=ceefb8&amp;fg_color=222222&amp;link_color=37cf4b&amp;border_color=8e966c" width="100%" height="173"><a href="https://gabl18.itch.io/pixel-art-clouds">Pixel Art Clouds by Gabl</a></iframe>
+
+        <img class="assetImageDisplay" src="images/asset-packs/cloud_spritesheet.png"/>
+        <img class="assetImageDisplay" src="images/asset-packs/thin_cloud_timelapse.gif"/>
+        <img class="assetImageDisplay" src="images/asset-packs/weird_cloud_timelapse.gif"/>
+
+        <iframe frameborder="0" src="https://itch.io/embed/3414405?linkback=true&amp;border_width=4&amp;bg_color=ceefb8&amp;fg_color=222222&amp;link_color=37cf4b&amp;border_color=8e966c" width="100%" height="173"><a href="https://gabl18.itch.io/110-free-pixelmojis">100+ Pixelmojis Asset Pack by Gabl</a></iframe>
+
+        <img class="assetImageDisplay" src="images/asset-packs/Pixelmojis.png"/>
+
+        <iframe frameborder="0" src="https://itch.io/embed/3617606?linkback=true&amp;border_width=4&amp;bg_color=ceefb8&amp;fg_color=222222&amp;link_color=37cf4b&amp;border_color=8e966c" width="100%" height="173"><a href="https://gabl18.itch.io/simple-pixel-cursors">Simple Pixel Cursors by Gabl</a></iframe>
+
+        <img class="assetImageDisplay" src="images/asset-packs/foto1.png"/>
+        <img class="assetImageDisplay" src="images/asset-packs/foto2.png"/>
+
+        <iframe frameborder="0" src="https://itch.io/embed/4464187?linkback=true&amp;border_width=4&amp;bg_color=ceefb8&amp;fg_color=222222&amp;link_color=37cf4b&amp;border_color=8e966c" width="100%" height="173"><a href="https://gabl18.itch.io/bubbly-mess-font">Bubbly Mess Font by Gabl</a></iframe>
+
+        <img class="assetImageDisplay" src="images/asset-packs/Bubbly Mess Display2.png"/>
+        <img class="assetImageDisplay" src="images/asset-packs/Bubbly Mess Lite Display2.png"/>
+        
+        <iframe frameborder="0" src="https://itch.io/embed/3773673?linkback=true&amp;border_width=4&amp;bg_color=ceefb8&amp;fg_color=222222&amp;link_color=37cf4b&amp;border_color=8e966c" width="100%" height="173"><a href="https://gabl18.itch.io/sharp-mess-font">Sharp Mess Font by Gabl</a></iframe>
+
+        <img class="assetImageDisplay" src="images/asset-packs/SHARP_MESS image_outline-export.png"/>
+        <img class="assetImageDisplay" src="images/asset-packs/SHARP_MESS LITE image_outline-export.png"/>
+
+        <iframe frameborder="0" src="https://itch.io/embed/3927057?linkback=true&amp;border_width=4&amp;bg_color=d2a6e8&amp;fg_color=222222&amp;link_color=6b3e75&amp;border_color=6e2e89" width="100%" height="173"><a href="https://gabl18.itch.io/haunted-asset-pack">Haunted Asset Pack by Gabl</a></iframe>
+
+        <img class="assetImageDisplay" src="images/asset-packs/Ghost Display.gif"/>
+        <img class="assetImageDisplay" src="images/asset-packs/Ghost Display 2.gif"/>
+        <img class="assetImageDisplay" src="images/asset-packs/Crow+Bat Display.gif"/>
+        <img class="assetImageDisplay" src="images/asset-packs/Pumpkins Display.png"/>
+        <img class="assetImageDisplay" src="images/asset-packs/Tombstones Display.png"/>
+        <img class="assetImageDisplay" src="images/asset-packs/Moons Display.png"/>
+        <img class="assetImageDisplay" src="images/asset-packs/Scenic_Display.gif"/>
       `
   },
   {
-    title: "Art-Projects",
+    title: "Video-Projects",
     content: `
-        <p contenteditable="true">
-          Here's some sample text. You can even type in here because contenteditable is true!
+        <p>
+          Video-Projects
         </p>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sQsBiKPdP5Q?si=7Qre43DK3cBVaz7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <img class="assetImageDisplay" src="images/video-projects/Stack.gif"/>
+
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMMsoWRxCgk?si=DlKdTfG3yAkTiC7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <img class="assetImageDisplay" src="images/video-projects/Gabl18.gif"/>
       `
   }
 ];
