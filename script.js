@@ -211,43 +211,57 @@ var content = [
         
         <iframe frameborder="0" src="https://itch.io/embed/4326949?linkback=true&amp;border_width=4&amp;bg_color=ceefb8&amp;fg_color=222222&amp;link_color=37cf4b&amp;border_color=8e966c" width="100%" height="173"><a href="https://gabl18.itch.io/pixel-art-duck">Pixel Art Duck by Gabl</a></iframe>
 
-        <img class="assetImageDisplay" src="images/asset-packs/Display1.gif"/>
-        <img class="assetImageDisplay" src="images/asset-packs/Display2.gif"/>
+        <div class="imageScrollBar">
+          <img class="assetImageDisplay" src="images/asset-packs/Display1.gif"/>
+          <img class="assetImageDisplay" src="images/asset-packs/Display2.gif"/>
+        </div>
 
         <iframe frameborder="0" src="https://itch.io/embed/3425305?linkback=true&amp;border_width=4&amp;bg_color=ceefb8&amp;fg_color=222222&amp;link_color=37cf4b&amp;border_color=8e966c" width="100%" height="173"><a href="https://gabl18.itch.io/pixel-art-clouds">Pixel Art Clouds by Gabl</a></iframe>
 
-        <img class="assetImageDisplay" src="images/asset-packs/cloud_spritesheet.png"/>
-        <img class="assetImageDisplay" src="images/asset-packs/thin_cloud_timelapse.gif"/>
-        <img class="assetImageDisplay" src="images/asset-packs/weird_cloud_timelapse.gif"/>
+        <div class="imageScrollBar">
+          <img class="assetImageDisplay" src="images/asset-packs/cloud_spritesheet.png"/>
+          <img class="assetImageDisplay" src="images/asset-packs/thin_cloud_timelapse.gif"/>
+          <img class="assetImageDisplay" src="images/asset-packs/weird_cloud_timelapse.gif"/>
+        </div>
 
         <iframe frameborder="0" src="https://itch.io/embed/3414405?linkback=true&amp;border_width=4&amp;bg_color=ceefb8&amp;fg_color=222222&amp;link_color=37cf4b&amp;border_color=8e966c" width="100%" height="173"><a href="https://gabl18.itch.io/110-free-pixelmojis">100+ Pixelmojis Asset Pack by Gabl</a></iframe>
 
-        <img class="assetImageDisplay" src="images/asset-packs/Pixelmojis.png"/>
+        <div class="imageScrollBar">
+          <img class="assetImageDisplay" src="images/asset-packs/Pixelmojis.png"/>
+        </div>
 
         <iframe frameborder="0" src="https://itch.io/embed/3617606?linkback=true&amp;border_width=4&amp;bg_color=ceefb8&amp;fg_color=222222&amp;link_color=37cf4b&amp;border_color=8e966c" width="100%" height="173"><a href="https://gabl18.itch.io/simple-pixel-cursors">Simple Pixel Cursors by Gabl</a></iframe>
 
-        <img class="assetImageDisplay" src="images/asset-packs/foto1.png"/>
-        <img class="assetImageDisplay" src="images/asset-packs/foto2.png"/>
+        <div class="imageScrollBar">
+          <img class="assetImageDisplay" src="images/asset-packs/foto1.png"/>
+          <img class="assetImageDisplay" src="images/asset-packs/foto2.png"/>
+        </div>
 
         <iframe frameborder="0" src="https://itch.io/embed/4464187?linkback=true&amp;border_width=4&amp;bg_color=ceefb8&amp;fg_color=222222&amp;link_color=37cf4b&amp;border_color=8e966c" width="100%" height="173"><a href="https://gabl18.itch.io/bubbly-mess-font">Bubbly Mess Font by Gabl</a></iframe>
 
-        <img class="assetImageDisplay" src="images/asset-packs/Bubbly Mess Display2.png"/>
-        <img class="assetImageDisplay" src="images/asset-packs/Bubbly Mess Lite Display2.png"/>
+        <div class="imageScrollBar">
+          <img class="assetImageDisplay" src="images/asset-packs/Bubbly Mess Display2.png"/>
+          <img class="assetImageDisplay" src="images/asset-packs/Bubbly Mess Lite Display2.png"/>
+        </div>
         
         <iframe frameborder="0" src="https://itch.io/embed/3773673?linkback=true&amp;border_width=4&amp;bg_color=ceefb8&amp;fg_color=222222&amp;link_color=37cf4b&amp;border_color=8e966c" width="100%" height="173"><a href="https://gabl18.itch.io/sharp-mess-font">Sharp Mess Font by Gabl</a></iframe>
 
-        <img class="assetImageDisplay" src="images/asset-packs/SHARP_MESS image_outline-export.png"/>
-        <img class="assetImageDisplay" src="images/asset-packs/SHARP_MESS LITE image_outline-export.png"/>
+        <div class="imageScrollBar">
+          <img class="assetImageDisplay" src="images/asset-packs/SHARP_MESS image_outline-export.png"/>
+          <img class="assetImageDisplay" src="images/asset-packs/SHARP_MESS LITE image_outline-export.png"/>
+        </div>
 
         <iframe frameborder="0" src="https://itch.io/embed/3927057?linkback=true&amp;border_width=4&amp;bg_color=d2a6e8&amp;fg_color=222222&amp;link_color=6b3e75&amp;border_color=6e2e89" width="100%" height="173"><a href="https://gabl18.itch.io/haunted-asset-pack">Haunted Asset Pack by Gabl</a></iframe>
 
-        <img class="assetImageDisplay" src="images/asset-packs/Ghost Display.gif"/>
-        <img class="assetImageDisplay" src="images/asset-packs/Ghost Display 2.gif"/>
-        <img class="assetImageDisplay" src="images/asset-packs/Crow+Bat Display.gif"/>
-        <img class="assetImageDisplay" src="images/asset-packs/Pumpkins Display.png"/>
-        <img class="assetImageDisplay" src="images/asset-packs/Tombstones Display.png"/>
-        <img class="assetImageDisplay" src="images/asset-packs/Moons Display.png"/>
-        <img class="assetImageDisplay" src="images/asset-packs/Scenic_Display.gif"/>
+        <div class="imageScrollBar">
+          <img class="assetImageDisplay" src="images/asset-packs/Ghost Display.gif"/>
+          <img class="assetImageDisplay" src="images/asset-packs/Ghost Display 2.gif"/>
+          <img class="assetImageDisplay" src="images/asset-packs/Crow+Bat Display.gif"/>
+          <img class="assetImageDisplay" src="images/asset-packs/Pumpkins Display.png"/>
+          <img class="assetImageDisplay" src="images/asset-packs/Tombstones Display.png"/>
+          <img class="assetImageDisplay" src="images/asset-packs/Moons Display.png"/>
+          <img class="assetImageDisplay" src="images/asset-packs/Scenic_Display.gif"/>
+        </div>
       `
   },
   {
