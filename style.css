@@ -7,6 +7,7 @@ body {
     background-image: url(./images/background.jpg);
     background-size: cover;
     overflow-y:hidden;
+    cursor: url(images/cursors/link.png), auto;
     /*background: #c1e8e8;*/
     /*background: linear-gradient(0deg,rgba(193, 232, 232, 1) 0%, rgba(177, 203, 230, 1) 100%);*/
 }
@@ -27,7 +28,6 @@ a:active {
 }
 
 .window {
-    font-family: "Bubbly Mess", sans-serif;
     color: #fff;
     position: absolute; 
     transform: translate(-50%, -50%); backdrop-filter: blur(35px); 
@@ -69,12 +69,14 @@ a:active {
     width: 100%; 
     display: flex; 
     align-items: center; 
-    cursor: grab; 
+    cursor: url(images/cursors/grab_hover.png), auto; 
     border-top-left-radius: 11px; border-top-right-radius: 11px;
+    font: monospace;
+    font-size:large;
 }
 
 .closebutton {
-    cursor: pointer;
+    cursor: url(images/cursors/pointer.png), auto;
     color: rgb(196, 91, 91);
     width: 30px; 
     height: 25px; 
@@ -82,17 +84,18 @@ a:active {
     border-radius: 4px; 
     border: solid 1px;
     margin-left: auto; 
-    margin-right: 0;
+    margin-right: 15px;
 }
 
 #welcomeopen {
-    cursor: pointer;
+    cursor: url(images/cursors/pointer.png), auto;
     margin-left: 20px;
 }
 
 #desktopApps {
     padding-top: 80px; 
-    padding-left: 20px
+    padding-left: 20px;
+    font-family: monospace;
 }
 
 .appStyling {
@@ -103,9 +106,10 @@ a:active {
 }
 
 .appStyling:hover {
+    transition: all 0.2s ease;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-    cursor: pointer;
+    cursor: url(images/cursors/pointer.png), auto;
 }
 
 .appText {
@@ -125,6 +129,7 @@ a:active {
     top: 50%; 
     left: 50%; 
     width: 40%;
+    font-family: "Bubbly Mess", sans-serif;
 }
 
 #aboutMe {
@@ -132,7 +137,9 @@ a:active {
     left: 75%; 
     width: 45%;
     height: 50%;
-    display: none
+    display: none;
+    font-family: monospace;
+    font-size:large;
 }
 
 #art {
@@ -140,25 +147,41 @@ a:active {
     left: 35%; 
     width: 55%;
     height: 50%;
-    display: none
+    display: none;
+    font-family: monospace;
+    font-size:large;
 }
 
 #artContainer {
     display: flex; 
     height: calc(100% - 30px);
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 #sidebar {
     width: 20%; 
     border-right: 1px solid #000000; 
     padding: 10px; 
+    overflow-y: auto;
+}
+
+#sidebar div {
+    transition: all 0.2s ease;
+    border-left: 0px solid #76a5af;
+}
+#sidebar div:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    padding-left: 10px !important;
+    border-left: 4px solid #76a5af;
 }
 
 #artContent {
-    width: 70%; 
-    padding: 10px;
+    width: 100%; 
+    padding-left: 10px; padding-right: 10px;
     display: block;
+    overflow-y: auto;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .imageDisplay {
@@ -167,18 +190,66 @@ a:active {
     border-radius: 4px;
 }
 
+.imageDisplay:hover {
+    transition: all 0.4s ease;
+    background-color:rgba(0, 0, 0, 0.538);
+    cursor:url(images/cursors/lens_maximize.png), auto;
+}
+
 .assetImageDisplay {
     width:min-content;
     height: 100%;
     border-radius: 4px;
 }
+
+.assetImageDisplay:hover {
+    transition: all 0.4s ease;
+    background-color:rgba(0, 0, 0, 0.538);
+    cursor:url(images/cursors/lens_maximize.png), auto;
+}
+
 .imageScrollBar {
     height: 40%;
-    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
     white-space: nowrap;
 }
 
 .windowTextBox {
     overflow: auto;
     padding:10px;
+}
+
+.iconImageDisplay {
+    width:min-content;
+    height: 15%;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    cursor: url(images/cursors/pointer.png), auto;
+    padding: 3px;
+}
+
+.iconImageDisplay:hover {
+    transition: all 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+#lightbox {
+    display: none; 
+    position: fixed; 
+    top: 0; left: 0; width: 100%; height: 100%; 
+    background: rgba(0,0,0,0.85); 
+    z-index: 99998; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+#lightboxImg {
+    max-width: 90%; max-height: 90%; 
+    box-shadow: 0 0 20px black; 
+    image-rendering: pixelated;
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-radius: 4px;
+    cursor:url(images/cursors/lens_minimize.png), auto;
 }

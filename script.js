@@ -272,11 +272,11 @@ var content = [
         </p>
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sQsBiKPdP5Q?si=7Qre43DK3cBVaz7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <img class="assetImageDisplay" src="images/video-projects/Stack.gif"/>
+        <img class="imageDisplay" src="images/video-projects/Stack.gif"/>
 
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMMsoWRxCgk?si=DlKdTfG3yAkTiC7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <img class="assetImageDisplay" src="images/video-projects/Gabl18.gif"/>
+        <img class="imageDisplay" src="images/video-projects/Gabl18.gif"/>
       `
   }
 ];
@@ -285,6 +285,11 @@ var content = [
 function setArtContent(index) {
   var artContent = document.querySelector("#artContent");
   artContent.innerHTML = content[index].content;
+
+  var artTitle = document.querySelector("#artWindowTitle");
+  if (artTitle) {
+    artTitle.innerText = content[index].title;
+  }
 }
 
 
@@ -295,7 +300,7 @@ function addToSideBar(index) {
  
   var newDiv = document.createElement("div");
   newDiv.innerHTML = art.title;
-  newDiv.style.cursor = "pointer";
+  newDiv.style.cursor = "url(images/cursors/pointer.png), auto";
   newDiv.style.padding = "5px";
   newDiv.style.marginBottom = "5px";
   newDiv.style.borderRadius = "4px";
@@ -314,6 +319,23 @@ function addToSideBar(index) {
 for (var i = 0; i < content.length; i++) {
   addToSideBar(i);
 }
+
+// Funktion, um die Lightbox für ALLE Bilder im Betriebssystem zu aktivieren
+document.addEventListener("click", function(e) {
+  // Wenn das geklickte Element die Klasse "imageDisplay" oder "assetImageDisplay" hat
+  if (e.target.classList.contains("imageDisplay") || e.target.classList.contains("assetImageDisplay")) {
+    var lightbox = document.getElementById("lightbox");
+    var lightboxImg = document.getElementById("lightboxImg");
+    
+    lightboxImg.src = e.target.src; // Bildquelle kopieren
+    lightbox.style.display = "flex"; // Lightbox anzeigen
+  }
+});
+
+// Schließen der Lightbox bei Klick irgendwo auf die schwarze Fläche
+document.getElementById("lightbox").addEventListener("click", function() {
+  this.style.display = "none";
+});
 
 // Standardmäßig die erste Notiz anzeigen beim Start
 setArtContent(0);
