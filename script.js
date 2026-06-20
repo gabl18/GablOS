@@ -11,7 +11,8 @@ function updateTime() {
 // Make the DIV element draggable:
 dragElement(document.getElementById("welcome"));
 dragElement(document.querySelector("#aboutMe"));
-dragElement(document.querySelector("#art"))
+dragElement(document.querySelector("#art"));
+dragElement(document.querySelector("#games"));
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
@@ -37,6 +38,9 @@ function dragElement(element) {
     e = e || window.event;
     e.preventDefault();
     // Step 7: Get the mouse cursor position at startup.
+
+    element.classList.add("dragging");
+
     initialX = e.clientX;
     initialY = e.clientY;
     // Step 8: Set up event listeners for mouse movement (`elementDrag`) and mouse button release (`closeDragElement`).
@@ -60,6 +64,9 @@ function dragElement(element) {
 
   // Step 12: Define the `stopDragging` function to stop tracking mouse movement by removing the event listeners.
   function stopDragging() {
+
+    element.classList.remove("dragging");
+    
     document.onmouseup = null;
     document.onmousemove = null;
   }

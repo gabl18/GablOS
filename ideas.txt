@@ -1,7 +1,2 @@
 Music player
-custom cursor
-
-
 Fonts
-Scrolling bei Art fixen
-beim fenster oben namen von app/art stehen haben

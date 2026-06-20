@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width,  initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>GablOS</title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     </head>
 
     <body>
@@ -21,14 +22,17 @@
 
         <div id="desktopApps">
             <div id="aboutMeApp" class="appStyling" data-window="aboutMe">
-                <img class="appImage" src="./images/icons/icon1.png">
+                <img class="appImage" src="./images/icons/appIcon1.png">
                 <p class="appText">About Me</p>
             </div>
             <div id="artApp" class="appStyling" data-window="art">
-                <img class="appImage" src="./images/icons/icon2.png">
+                <img class="appImage" src="./images/icons/appIcon2.png">
                 <p class="appText">Art</p>
             </div>
-            
+            <div id="gamesApp" class="appStyling" data-window="games">
+                <img class="appImage" src="./images/icons/appIcon3.png">
+                <p class="appText">Games</p>
+            </div>
         </div>
 
         <div id="welcome" class="window">
@@ -52,7 +56,7 @@
 
             <div class="windowTextBox">
                 <h1>About Me</h1>
-                <img style="width:60px; height:60px" src="images/pixel-art/frog.png" alt="Frog pixel-art"/>
+                <img style="width:60px; height:60px" src="./images/pixel-art/frog.png" alt="Frog pixel-art"/>
                 <p>Meet me, Gabl, a guy from Austria doing much different stuff. I am trying to learn how to make fun Games, Art and Assets for people to enjoy and this is why I wanted to create this Website as my Portfolio to display some of my work! :D Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
                 <a href="https://gabl18.itch.io/" target="_blank"><img class="iconImageDisplay" src="images/icons/icon2.png"></a>
@@ -67,13 +71,170 @@
         <div id="art" class="window">
             <div id="artheader" class="header">
                 <p style="padding: 10px; margin: 0;">Art - <span id="artWindowTitle">Overview</span></p>
-                <div id="artClose" class="closebutton"></div>
+                <div id="artclose" class="closebutton"></div>
             </div>
             <div id="artContainer">
                 <div id="sidebar">
                     </div>
                 <div id="artContent">
                     </div>
+            </div>
+        </div>
+
+        <div id="games" class="window">
+            <div id="gamesheader" class="header">
+                <p style="padding: 10px; margin: 0;">Games</p>
+                <div id="gamesclose" class="closebutton"></div>
+            </div>
+
+            <div class="gamesWrapper">
+
+                <div class="game-card">
+                    <div class="game-main-info">
+                        <div class="game-media">
+                            <h3 class="game-title">simple game about climbing</h3>
+                            <iframe frameborder="0" src="https://itch.io/embed/4425453?bg_color=a3b4bd&amp;fg_color=fffefe&amp;link_color=bbeff7&amp;border_color=4784aa" width="208" height="167"><a href="https://gabl18.itch.io/simple-game-about-climbing">simple game about climbing by Gabl, sir_lordmike, Ilem</a></iframe>
+                        </div>
+
+                        <div class="game-details">
+                            <div class="game-date">Release: 29th March 2026</div>
+                            <p class="game-description">
+                                Simple game about climbing is, well a game about climbing. Made by, <a href="https://sir-lordmike.itch.io/" target="_blank">sir_lordmike</a>, <a href="https://ilemthcelhcs.itch.io/" target="_blank">ilem</a> and <a href="https://gabl18.itch.io/" target="_blank">me</a>! "simple game about climbing" was made in precisely 34 hours for the <a href="https://itch.io/jam/dtj36-24" target="_blank">Devs That Jam #24</a> with the theme "SUMMIT". No premade assets have been used aside from some sound effects from pixabay, the music (ilem), the code (sir_lordmike), the art (gabl18) - even the font have been made specifically for this game (once again).</br></br>This time the crunch was not that bad, we even had time for a leaderboard - who needs sleep anyways? We ruined our sleep schedule, but we won ¯\_(ツ)_/¯ - so it was definitely worth it.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="imageScrollBar">
+                        <img class="assetImageDisplay" src="./images/games/1dtj24.gif"/>
+                        <img class="assetImageDisplay" src="./images/games/2dtj24.gif"/>
+                        <img class="assetImageDisplay" src="./images/games/3dtj24.gif"/>
+                        <img class="assetImageDisplay" src="./images/games/4dtj24.gif"/>
+                        <img class="assetImageDisplay" src="./images/games/5dtj24.gif"/>
+                    </div>
+                </div>
+                
+
+                <div class="game-card">
+                    <div class="game-main-info">
+                        <div class="game-media">
+                            <h3 class="game-title">Vinylity</h3>
+                            <iframe frameborder="0" src="https://itch.io/embed/3765009?bg_color=fff7e5&amp;fg_color=222222&amp;link_color=ed9100&amp;border_color=bebebe" width="208" height="167"><a href="https://gabl18.itch.io/vinylity">Vinylity by Gabl, Ilem, sir_lordmike</a></iframe>
+                        </div>
+
+                        <div class="game-details">
+                            <div class="game-date">Release: 9th August 2025</div>
+                            <p class="game-description">
+                                Working on this game were 3 people once again, <a href="https://sir-lordmike.itch.io/" target="_blank">sir_lordmike</a>, <a href="https://ilemthcelhcs.itch.io/" target="_blank">ilem</a> and <a href="https://gabl18.itch.io/" target="_blank">me</a>! "Vinylity" was made in about 3.5 days for the <a href="https://itch.io/jam/gmtk-2025" target="_blank">GMTK Game Jam 2025</a> with the theme "LOOP" and everything was made specifically for this game. No premade assets have been used, the music (ilem), the code (sir_lordmike), the art (gabl18)- even the font have been made specifically for Vinylity. </br></br>Vinylity is a rythm game that tests your patience. The game never ends, meaning you can keep playing for how much time you want to. The songs keep LOOPing, but the game gets harder and harder. </br></br>We had such a blast working on this game, especially when implementing my own hand into the game lol. Not everything went as planned tho and we sadly couldn't get a web build running.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="imageScrollBar">
+                        <iframe class="assetImageDisplay" style="width: 270px" src="https://www.youtube.com/embed/5g4VAboU2KA?si=GuyBUtqgHAvGZKe2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <img class="assetImageDisplay" src="./images/games/vinyl1.png"/>
+                        <img class="assetImageDisplay" src="./images/games/vinyl2.png"/>
+                        <img class="assetImageDisplay" src="./images/games/vinyl3.png"/>
+                        <img class="assetImageDisplay" src="./images/games/vinyl4.png"/>
+                        <img class="assetImageDisplay" src="./images/games/vinyl5.png"/>
+                    </div>
+                </div>
+
+
+                <div class="game-card">
+                    <div class="game-main-info">
+                        <div class="game-media">
+                            <h3 class="game-title">Tiny Globes</h3>
+                            <iframe frameborder="0" src="https://itch.io/embed/3576920?bg_color=e6dfcc&amp;fg_color=222222&amp;link_color=ff3590&amp;border_color=bc769b" width="208" height="167"><a href="https://gabl18.itch.io/tiny-globes">Tiny Globes by Gabl, Ilem, sir_lordmike</a></iframe>
+                        </div>
+
+                        <div class="game-details">
+                            <div class="game-date">Release: 26th May 2025</div>
+                            <p class="game-description">
+                                This game was the first game in which we were 3 people:  <a href="https://sir-lordmike.itch.io/" target="_blank">sir_lordmike</a>, <a href="https://gabl18.itch.io/" target="_blank">me</a> and <a href="https://ilemthcelhcs.itch.io/" target="_blank">ilem</a>! We only wanted to make a small game for the <a href="https://itch.io/jam/gamedevtv-jam-2025" target="_blank">GameDevTVJam2025</a> but somehow we ended up working like 7 days or more on it lol. The theme was "Tiny World" and we came up with the game Tiny Globes, where you are a Snowglobe-Shop Owner and get requests from guests to build specific snowglobes and thus create their tiny worlds (;</br></br>ilem made an amanzing soundtrack, sir_lordmike did all the programming - and I did the art and also implemented many sounds! </br></br>We ended up being 46th out of 1014!!! Which was a amazing result. This was a really fun experience (even tho we also had a intense crunch in the end with submitting the game like 1 minute before the deadline haha)!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="imageScrollBar">
+                        <img class="assetImageDisplay" src="./images/games/globes1.jpg"/>
+                        <img class="assetImageDisplay" src="./images/games/globes2.jpg"/>
+                        <img class="assetImageDisplay" src="./images/games/globes3.jpg"/>
+                        <img class="assetImageDisplay" src="./images/games/globes4.jpg"/>
+                    </div>
+                </div>
+
+
+                <div class="game-card">
+                    <div class="game-main-info">
+                        <div class="game-media">
+                            <h3 class="game-title">Lasersplinter</h3>
+                            <iframe frameborder="0" src="https://itch.io/embed/3396779?bg_color=ebdfce&amp;fg_color=222222&amp;link_color=0797ff&amp;border_color=bebebe" width="208" height="167"><a href="https://gabl18.itch.io/lasersplinter">Lasersplinter by Gabl, sir_lordmike</a></iframe>
+                        </div>
+
+                        <div class="game-details">
+                            <div class="game-date">Release: 16th March 2025</div>
+                            <p class="game-description">
+                                This game was made together with <a href="https://sir-lordmike.itch.io/" target="_blank">sir_lordmike</a> again, for the German game jam <a href="https://itch.io/jam/puls-game-jam" target="_blank">Puls Game Jam</a>. The theme was "Kaputt" wich translates to destroyed in english. The Gamejam was only 48 hours long, and we messed up our Github Repo wich did cost us like 4 hours and much pain. This lead to a real crunch in the end with us almost not being able to submit the game in time (but we did it, like 3 min were remaining, phew) </br></br>We are really proud for how this game turned out - especially for the time and given it being our first real Godot game. (godot is actually a game-engine other than pygame hahaha). There were 2.5k € on the line, but we ended up getting 50th place, wich we are still very greateful for, because there were some amazing games done in this time!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="imageScrollBar">
+                        <img class="assetImageDisplay" src="./images/games/splinter1.png"/>
+                        <img class="assetImageDisplay" src="./images/games/splinter2.png"/>
+                        <img class="assetImageDisplay" src="./images/games/splinter3.gif"/>
+                        <img class="assetImageDisplay" src="./images/games/splinter4.png"/>
+                    </div>
+                </div>
+
+
+                <div class="game-card">
+                    <div class="game-main-info">
+                        <div class="game-media">
+                            <h3 class="game-title">Cutting Melons</h3>
+                            <iframe frameborder="0" src="https://itch.io/embed/2746669?bg_color=fff9ef&amp;fg_color=000000&amp;link_color=bbdedc&amp;border_color=827585" width="208" height="167"><a href="https://gabl18.itch.io/cutting-melons">Cutting Melons by Gabl</a></iframe>
+                        </div>
+
+                        <div class="game-details">
+                            <div class="game-date">Release: 2nd June 2024</div>
+                            <p class="game-description">
+                                This Game was made only by me in about 2 days for 2 gamejams - the one that motivated me to make a game in the first place was <a href="https://www.youtube.com/@PinoPrime" target="_blank">Pinoprime</a>, who hosted the <a href="https://itch.io/jam/roastmejam" target="_blank">Roast Me Jam</a> for a <a href="https://www.youtube.com/watch?v=JmGNiLcmsww" target="_blank">YouTube Video</a> with no specific theme. But because the <a href="https://itch.io/jam/gamedevtv-jam-2024" target="_blank">GameDevTVJam2024</a> was running at the same time with the theme "Last Stand" I decided to make the game for both jams. </br></br> The game turned out really simple (and was made in pygame aaah). Sadly I didnt end up in the <a href="https://www.youtube.com/watch?v=JmGNiLcmsww" target="_blank">Video</a>, but I am really happy with how the art for it turned out!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="imageScrollBar">
+                        <img class="assetImageDisplay" src="./images/games/melon1.png"/>
+                        <img class="assetImageDisplay" src="./images/games/melon2.png"/>
+                        <img class="assetImageDisplay" src="./images/games/melon3.png"/>
+                    </div>
+                </div>
+
+
+                <div class="game-card">
+                    <div class="game-main-info">
+                        <div class="game-media">
+                            <h3 class="game-title">The Perfect Drink</h3>
+                            <iframe frameborder="0" src="https://itch.io/embed/2625652?bg_color=ffffff&amp;fg_color=222222&amp;link_color=00bdfc&amp;border_color=a5cdcd" width="208" height="167"><a href="https://gabl18.itch.io/the-perfect-drink">The Perfect Drink by Gabl, sir_lordmike</a></iframe>
+                        </div>
+
+                        <div class="game-details">
+                            <div class="game-date">Release: 4th April 2024</div>
+                            <p class="game-description">
+                                THE first Game-Jam <a href="https://gabl18.itch.io/" target="_blank">me</a> and <a href="https://sir-lordmike.itch.io/" target="_blank">sir_lordmike</a> ever participated in. We made this platformer in about a week (and yes, we almost worked like 10 hours a day on it ;_;) in python with the library "pygame" for the <a href="https://itch.io/jam/pygame-community-spring-jam-2024/rate/2625652" target="_blank">pygame-community-spring-jam-2024</a> and we ended up getting 3rd place!!!! :DD </br></br> Thinking back to this game we have sooo much that could have been done better (no coyote time, no spritesheets 💀, fixed window size, and so much more). BUT we learned sooo much from this Jam and I am really greateful that because of pygame we started participating in game jams! (but I will never go back to pygame ;_; it was hell of a pain) (;
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="imageScrollBar">
+                        <iframe class="assetImageDisplay" style="width: 270px" src="https://www.youtube.com/embed/-ZtxtABKvqA?si=234YW_ySwzrMpveJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <img class="assetImageDisplay" src="./images/games/perfect1.png"/>
+                        <img class="assetImageDisplay" src="./images/games/perfect2.gif"/>
+                        <img class="assetImageDisplay" src="./images/games/perfect3.png"/>
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
