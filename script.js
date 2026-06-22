@@ -136,8 +136,9 @@ var content = [
   {
     title: "Overwiew",
     content: `
-        <p contenteditable="true">
-          <span>Test 1
+        <h1> Overwiew </h1>
+        <p>
+          <span>I have been doing tons of art in my life, check out some of it here if you like!
           </span>
           <blockquote style="background-color: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px;">
             <i>TEST<br>TEST</i>

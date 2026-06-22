@@ -140,8 +140,8 @@ a:active {
 
 #aboutMe {
     top: 35%; 
-    left: 75%; 
-    width: 45%;
+    left: 80%; 
+    width: 30%;
     height: 50%;
     display: none;
     font-family: monospace;
@@ -237,8 +237,8 @@ a:active {
 }
 
 .iconImageDisplay {
-    width:min-content;
-    height: 15%;
+    width: max-content;
+    height: 12%;
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 2px;
