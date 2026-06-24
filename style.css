@@ -7,7 +7,6 @@ body {
     background-image: url(./images/background.jpg);
     background-size: cover;
     overflow-y:hidden;
-    cursor: url(images/cursors/link.png), auto;
     /*background: #c1e8e8;*/
     /*background: linear-gradient(0deg,rgba(193, 232, 232, 1) 0%, rgba(177, 203, 230, 1) 100%);*/
 }
@@ -42,7 +41,7 @@ a:active {
 .window.dragging {
     filter: drop-shadow(0 0 2px black);
     transform: translate(-50%, -50%) scale(1.01) rotate(-1deg);
-    cursor: url("images/cursors/grab.png"), auto;
+    cursor:grabbing;
 }
 
 #top-bar {
@@ -75,14 +74,14 @@ a:active {
     width: 100%; 
     display: flex; 
     align-items: center; 
-    cursor: url(images/cursors/grab_hover.png), auto; 
+    cursor:grab; 
     border-top-left-radius: 11px; border-top-right-radius: 11px;
     font: monospace;
     font-size:large;
 }
 
 .closebutton {
-    cursor: url(images/cursors/pointer.png), auto;
+    cursor:pointer;
     color: rgb(196, 91, 91);
     width: 30px; 
     height: 25px; 
@@ -94,7 +93,7 @@ a:active {
 }
 
 #welcomeopen {
-    cursor: url(images/cursors/pointer.png), auto;
+    cursor:pointer;
     margin-left: 20px;
 }
 
@@ -115,7 +114,7 @@ a:active {
     transition: all 0.2s ease;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-    cursor: url(images/cursors/pointer.png), auto;
+    cursor:pointer;
 }
 
 .appText {
@@ -209,7 +208,7 @@ a:active {
 .imageDisplay:hover {
     transition: all 0.4s ease;
     background-color:rgba(0, 0, 0, 0.538);
-    cursor:url(images/cursors/lens_maximize.png), auto;
+    cursor:zoom-in;
 }
 
 .assetImageDisplay {
@@ -221,7 +220,7 @@ a:active {
 .assetImageDisplay:hover {
     transition: all 0.4s ease;
     background-color:rgba(0, 0, 0, 0.538);
-    cursor:url(images/cursors/lens_maximize.png), auto;
+    cursor:zoom-in;
 }
 
 .imageScrollBar {
@@ -242,7 +241,7 @@ a:active {
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-    cursor: url(images/cursors/pointer.png), auto;
+    cursor: pointer;
     padding: 3px;
 }
 
@@ -267,7 +266,7 @@ a:active {
     image-rendering: auto;
     background-color: rgba(0, 0, 0, 0.4); 
     border-radius: 4px;
-    cursor:url(images/cursors/lens_minimize.png), auto;
+    cursor:zoom-out;
 }
 
 .gamesWrapper {

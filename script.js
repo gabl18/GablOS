@@ -138,10 +138,10 @@ var content = [
     content: `
         <h1> Overwiew </h1>
         <p>
-          <span>I have been doing tons of art in my life, check out some of it here if you like!
+          <span>I've been doing tons of art in tons of different mediums in my life, check out some of it here if you like!
           </span>
           <blockquote style="background-color: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px;">
-            <i>TEST<br>TEST</i>
+            <i>The different types are kinda sorted through the provided sidebar, just click yourself through all options and check everything out. To view the image at a bigger scale, just click on the desired image once.</i>
           </blockquote>
         </p>
       `
@@ -149,7 +149,8 @@ var content = [
   {
     title: "Pixel-Art",
     content: `
-        <p>Pixel-Art</p>
+        <h3>Pixel-Art</h3>
+        <p>I don't know why, but Pixel-Art always seemed to really draw me to it. After first trying it out due to a game-jam I found the love in it and have since improved a lot (hopefully lol).</p>
 
         <img class="imageDisplay" src="images/pixel-art/Computer.gif" alt="Computer pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/A Goatly Stare Main.png" alt="Goatly Stare pixel-art"/>
@@ -176,8 +177,9 @@ var content = [
   {
     title: "Traditional Art",
     content: `
+        <h3>Traditional Art</h3>
         <p>
-          Traditional Art
+          I actually didn't know how to call this section, because what does "Traditional Art" even mean? Could be anything - and that it is. Here are some very different art pieces, from drawing on fabric, stone, digitally or just completely something different.
         </p>
         <img class="imageDisplay" src="images/traditional-art/LethalCompanyThumbnail.png"/>
         <img class="imageDisplay" src="images/traditional-art/Wolke.png" alt="test"/>
@@ -201,20 +203,23 @@ var content = [
   {
     title: "3D-Modelling",
     content: `
+        <h3>3D-Modelling</h3>
         <p>
-          3D-Modelling
+          Creating 3D-Models is a really fascinating process that actually requires a lot of different knowledge, I learned how to make really simple 3D-Models using picoCAD2 and have since then also tried some Blender.
         </p>
         <img class="imageDisplay" src="images/3d-models/horizontal_rotierender_fisch.gif"/>
         <img class="imageDisplay" src="images/3d-models/luffy_hat.gif"/>
         <img class="imageDisplay" src="images/3d-models/Pokeball.gif"/>
         <img class="imageDisplay" src="images/3d-models/Vending_Machine_Test.gif"/>
+        <img class="imageDisplay" src="images/3d-models/sheeprender.png"/>
       `
   },
   {
     title: "Asset-Packs",
     content: `
-        <p contenteditable="true">
-          Here's some sample text. You can even type in here because contenteditable is true!
+        <h3>Asset-Packs</h3>
+        <p>
+          I have always wanted to create Asset Packs, and have been able to do so early 2025 where I published my first one: the "Pixelmojis". Since then I made many different ones, and have already managed to reach thousands of downloads. Most of them are free and licensed under creative commons, so check them out if you like!
         </p>
         
         <iframe frameborder="0" src="https://itch.io/embed/4326949?linkback=true&amp;border_width=4&amp;bg_color=ceefb8&amp;fg_color=222222&amp;link_color=37cf4b&amp;border_color=8e966c" width="100%" height="173"><a href="https://gabl18.itch.io/pixel-art-duck">Pixel Art Duck by Gabl</a></iframe>
@@ -275,8 +280,9 @@ var content = [
   {
     title: "Video-Projects",
     content: `
+        <h3>Video Projects</h3>
         <p>
-          Video-Projects
+          I actually love editing videos, as I have edited countless gameplay-highlights from playing videogames with my friends, but I also had the opportunity to participate in some art centered video-projects that are displayed here.
         </p>
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sQsBiKPdP5Q?si=7Qre43DK3cBVaz7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
