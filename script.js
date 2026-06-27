@@ -412,7 +412,9 @@ prevBtn.addEventListener("click", () => {
 });
 
 nextBtn.addEventListener("click", () => {
-    if (audio.duration) progressBar.value = (audio.currentTime / audio.duration) * 100;
+    currentSongIndex = (currentSongIndex + 1 + playlist.length) % playlist.length;
+    loadSong(playlist[currentSongIndex]);
+    if (isPlaying) audio.play();
 });
 
 // Fortschrittsbalken updaten
