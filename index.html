@@ -33,6 +33,10 @@
                 <img class="appImage" src="./images/icons/appIcon3.png">
                 <p class="appText">Games</p>
             </div>
+            <div id="musicApp" class="appStyling" data-window="music">
+                <img class="appImage" src="./images/icons/appIcon4.png">
+                <p class="appText">Music</p>
+            </div>
         </div>
 
         <div id="welcome" class="window">
@@ -240,6 +244,36 @@
 
 
             </div>
+        </div>
+
+        <div id="music" class="window">
+            <div id="musicheader" class="header">
+                <p style="padding: 10px; margin: 0;">Music Player</p>
+                <div id="musicclose" class="closebutton"></div>
+            </div>
+            
+            <div class="musicWrapper">
+                <h3 id="currentSongTitle">Loading song...</h3>
+
+                <div class="progressContainer">
+                    <input type="range" id="progressBar" value="0" min="0" max="100">
+                </div>
+                
+                <div class="controls-row">
+                    <div class="playerControls">
+                        <button id="prevBtn" class="musicBtn">⏮</button>
+                        <button id="playBtn" class="musicBtn">▶</button>
+                        <button id="nextBtn" class="musicBtn">⏭</button>
+                    </div>
+                
+                    <div class="volumeContainer">
+                        <span>-</span>
+                        <input type="range" id="volumeSlider" value="70" min="0" max="100">
+                        <span>+</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div id="lightbox">

@@ -188,6 +188,7 @@ a:active {
     background-color: rgba(255, 255, 255, 0.2) !important;
     padding-left: 10px !important;
     border-left: 4px solid #76a5af;
+    cursor:pointer;
 }
 
 #artContent {
@@ -326,4 +327,91 @@ a:active {
 
 .game-description a:hover {
     color: #fff
+}
+
+
+
+
+
+
+
+
+#music {
+    top: 150px;
+    left: 85%;
+    width: 25%;
+    height: auto;
+    display: none; 
+    font-family: monospace;
+    font-size: large;
+}
+
+.musicWrapper {
+    padding: 12px 15px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#currentSongTitle {
+    margin: 0 0 8px 0;
+    font-size: 1rem;
+    color: #97c2c1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.progressContainer {
+    margin-bottom: 10px
+}
+
+.progressContainer input[type="range"] {
+    width: 100%;
+    accent-color: #76a5af;
+    cursor: pointer;
+}
+
+.controls-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.playerControls {
+    display: flex;
+    gap: 8px;
+}
+
+/* Pixelige Retro-Buttons */
+.musicBtn {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #76a5af;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.musicBtn:hover {
+    background-color: #76a5af;
+    color: black;
+}
+
+.volumeContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    max-width: 140px;
+    font-size: 0.85rem;
+}
+
+.volumeContainer input[type="range"] {
+    width: 100%;
+    accent-color: #76a5af;
+    cursor: pointer;
 }

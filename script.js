@@ -13,6 +13,7 @@ dragElement(document.getElementById("welcome"));
 dragElement(document.querySelector("#aboutMe"));
 dragElement(document.querySelector("#art"));
 dragElement(document.querySelector("#games"));
+dragElement(document.querySelector("#music"));
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
@@ -212,6 +213,7 @@ var content = [
         <img class="imageDisplay" src="images/3d-models/Pokeball.gif"/>
         <img class="imageDisplay" src="images/3d-models/Vending_Machine_Test.gif"/>
         <img class="imageDisplay" src="images/3d-models/sheeprender.png"/>
+        <img class="imageDisplay" src="images/3d-models/sheep_picoCAD2.gif"/>
       `
   },
   {
@@ -314,7 +316,7 @@ function addToSideBar(index) {
  
   var newDiv = document.createElement("div");
   newDiv.innerHTML = art.title;
-  newDiv.style.cursor = "url(images/cursors/pointer.png), auto";
+  newDiv.style.cursor = "pointer !important";
   newDiv.style.padding = "5px";
   newDiv.style.marginBottom = "5px";
   newDiv.style.borderRadius = "4px";
@@ -353,3 +355,91 @@ document.getElementById("lightbox").addEventListener("click", function() {
 
 // Standardmäßig die erste Notiz anzeigen beim Start
 setArtContent(0);
+
+
+
+
+
+
+
+// MUSIKAPP
+
+const playlist = [
+    { title: "A New Beginning", path: "./audio/A_New_Beginning.ogg" },
+    { title: "Work Space", path: "./audio/Work_Space.ogg" },
+    { title: "Firecat", path: "./audio/Firecat.ogg" },
+    { title: "Round and Round", path: "./audio/Round_and_Round.ogg" },
+    { title: "Sketchbook 2024-07-03", path: "./audio/Sketchbook_2024-07-03.ogg" }
+];
+
+let currentSongIndex = 0;
+let isPlaying = false;
+const audio = new Audio();
+
+
+const playBtn = document.getElementById("playBtn");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const songTitle = document.getElementById("currentSongTitle");
+const progressBar = document.getElementById("progressBar");
+const volumeSlider = document.getElementById("volumeSlider");
+
+function loadSong(song) {
+    songTitle.innerText = song.title;
+    audio.src = song.path;
+    progressBar.value = 0;
+}
+
+// Funktion: Play / Pause umschalten
+function togglePlay() {
+    if (isPlaying) {
+        audio.pause();
+        playBtn.innerText = "▶";
+    } else {
+        audio.play().catch(e => console.log("Playback blocked"));
+        playBtn.innerText = "⏸";
+    }
+    isPlaying = !isPlaying;
+}
+
+// Event-Listeners für Buttons
+playBtn.addEventListener("click", togglePlay);
+
+prevBtn.addEventListener("click", () => {
+    currentSongIndex = (currentSongIndex - 1 + playlist.length) % playlist.length;
+    loadSong(playlist[currentSongIndex]);
+    if (isPlaying) audio.play();
+});
+
+nextBtn.addEventListener("click", () => {
+    if (audio.duration) progressBar.value = (audio.currentTime / audio.duration) * 100;
+});
+
+// Fortschrittsbalken updaten
+audio.addEventListener("timeupdate", () => {
+    if (audio.duration) progressBar.value = (audio.currentTime / audio.duration) * 100;
+});
+
+// Spulen
+progressBar.addEventListener("input", () => {
+    if (audio.duration) audio.currentTime = (progressBar.value / 100) * audio.duration;
+});
+
+// Lautstärke (0.0 bis 1.0)
+volumeSlider.addEventListener("input", () => audio.volume = volumeSlider.value / 100);
+
+// Automatisch weitergehen, wenn Song vorbei ist
+audio.addEventListener("ended", () => nextBtn.click());
+
+// App initialisieren
+loadSong(playlist[currentSongIndex]);
+audio.volume = volumeSlider.value / 100;
+
+// Fenster schließen
+document.getElementById("musicclose").addEventListener("click", () => {
+    e.stopPropagation();
+    playBtn.innerText = "▶";
+    document.getElementById("music").style.display = "none";
+    audio.pause();
+    isPlaying = false;
+});
