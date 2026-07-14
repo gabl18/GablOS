@@ -167,6 +167,7 @@ var content = [
         <img class="imageDisplay" src="images/pixel-art/Repo_Covr.png" alt="Video-Game pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/Repo_McDonald.png" alt="Video-Game pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/RepoPFPPurple.png" alt="Video-Game pixel-art"/>
+        <img class="imageDisplay" src="images/pixel-art/StickerSheetWhole.png" alt="StickerSheet for Hackclub"/>
         <img class="imageDisplay" src="images/pixel-art/Sad-Vibes.png" alt="Forest pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/Shooter.gif" alt="Video-Game pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/Sonic Test.gif" alt="Video-Game pixel-art"/>
