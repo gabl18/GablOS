@@ -415,3 +415,138 @@ a:active {
     accent-color: #76a5af;
     cursor: pointer;
 }
+
+
+
+
+/*Browser*/
+#browser {
+    top: 50%; 
+    left: 50%; 
+    width: 55%;
+    height: 60%;
+    display: none;
+    font-family: monospace;
+    font-size: large;
+}
+
+.browserWrapper {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+}
+
+.browserLogo {
+    text-align: center;
+}
+
+.browserLogo h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 2px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.browserLogo p {
+    margin: 5px 0 0 0;
+    font-size: 0.85rem;
+    color: #97c2c1;
+    letter-spacing: 1px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.searchContainer {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    padding: 8px 16px;
+    transition: all 0.2 ease;
+}
+
+.searchBar input {
+    border: 0;
+}
+
+.searchBar input:focus {
+    border: 0;
+    outline: none!important;
+}
+
+.searchBar:focus-within {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: #76a5af;
+    box-shadow: 0 0 8px rgba(118, 165, 175, 0.5);
+}
+
+.searchIcon {
+    margin-right: 10px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.searchBar input {
+    background: transparent;
+    width: 100%;
+    font-size: 0.95rem;
+}
+
+.searchResults {
+    display: none;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background-color: rgba(20, 20, 20, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.searchItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: background-color 0.15s ease;
+}
+
+.searchItem:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #bbeff7;
+}
+
+.historyIcon {
+    margin-right: 10px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.browserBtn {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #76a5af;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2 ease;
+}
+
+.browserBtn:hover {
+    background-color: #76a5af;
+    color: black;
+}

@@ -1,0 +1,63 @@
+Ship 1:
+Reason 1
+
+I think that this is very cool, however, I don't really really like the font and I think it would be nice if you could play the games inside of the webos. 
+
+Reason 2
+
+I can tell there is a lot of effort put into this project because you made all the art yourself! I really like your art style, so I think this project gets a perfect score on technical merit. On originality, however, the art and content are probably the most original things in this project because the idea of a webos is probably the most overused theme in the entire stardance platform. I like the devlogs, though, because they do a good job of showing progress, and I can also see how your thing is being built. The readme is good, I guess, but it's just an image in some text; you could have made it more detailed and more contentful. I was able to use it, but maybe handle widescreen monitors better, because it was not that appealing visually and difficult to use when so small.
+
+Reason 3
+
+UI IS SO BEAUTIFUL, I like how you hand drew everything which makes it unique compared to everyone else who used icons. Dont know if its a me issue but I would fix some of the hitbox stuff because i had trouble clicking the close button, but its still very good
+
+Reason 4
+
+I love this site! The handwritten font looks so nice, You even drew the custom icons for itch, discord ect, sick. The art section was a really cool way to show off your work, same with the game section! Also just want to point out the small tilt when you drag windows, really shows attention to detail!. I think i found a single bug, very minor, where the bottom left ocrnner of the music tab had a flickering cube (maybe leftover element) but other than that, AWESOME site, W. Oh, and loads of devlogs and quite a few commits, really shows the progress!
+
+Reason 5
+
+I like this portfolio a lot! The pixel art, icons, and overall design of the website is amazing! Very comfortable vibe. The music player is a nice addition that enhances the UX. Some of the pages I liked best were the 3d modeling pages and the asset packs! I can tell how much care went into this project. I'd like to see more from your devlogs and READMEs though! What technologies did you use? Can you go more into depth about the specific challenges you faced in your devlogs?
+
+Reason 6
+
+I think the webos looks good, you should add a option to change the background. But in all I really like the custom made icons(kind of feel some of them look better than the official ones)
+
+Reason 7
+
+It's a pretty neat webOS, I listened to your songs and looked at your artworks. It's cool that you were a part of ArtIndie's animation collabs, I thought about joining one of them but pixel art isn't exactly my thing.
+
+Only notes is that trying to close a window sometimes results in you dragging the window instead, and maybe if you intend to add onto this a option to change from the 24hr time to a 12hr time format would be nice.
+
+Reason 8
+
+This look really nice I can't wait to see more.
+
+Reason 9
+
+Cool ! you really worked on it very well .
+
+Reason 10
+
+The art style is pretty distinct, but the devlog can be more organized.
+
+Reason 11
+
+For some really weird reason , i really like the theme of your webos , great job buddy , keep up your good work buddy =)
+⠀⠀⠀⠀⢀⣤⠤⣄⠀⠀⠀⠀⣠⠤⣄⠀⠀⠀
+⠀⠀⠀⢠⠞⠀⠀⠈⢷⠀⠀⡜⠃⠀⠈⢳⠀⠀
+⠀⠀⠀⣾⠀⠀⠀⠀⠘⡇⢰⠅⠀⠀⠀⠸⡇⠀
+⠀⠀⠀⣿⠀⠀⠀⠀⠀⡇⣾⠀⠀⠀⠀⢸⠃⠀
+⠀⠀⠀⢹⡀⠀⠀⠀⠀⡇⣿⠀⠀⠀⠀⡾⠀⠀
+⠀⠀⠀⠸⡇⠀⠀⠀⠀⠷⠿⠀⠀⠀⢰⠇⠀⠀
+⠀⢀⡴⠛⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢶⡀⠀
+⢰⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡄
+⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷
+⢹⠀⠀⠀⢰⡆⠀⠀⠀⠀⠀⠀⢀⣄⠀⠀⠀⡟
+⠈⢧⡀⠀⠀⠀⠀⠀⢄⡀⣀⠀⠀⠁⠀⠀⣸⠃
+⠀⠈⠻⢦⣀⠀⠀⠀⠚⠙⠂⠀⠀⠀⣀⡴⠋⠀
+⠀⠀⠀⠀⠈⠉⠓⠒⠲⠶⠶⠒⠒⠋⠁⠀⠀⠀
+
+Reason 12
+
+I have to admit the design of the website is phenomenal. For a WebOS 1 mission, this is well above other projects. It also feels very personal, especially because you mentioned that the icons are your own art and some of the music is from your friends.

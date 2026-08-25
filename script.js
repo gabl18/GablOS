@@ -14,6 +14,7 @@ dragElement(document.querySelector("#aboutMe"));
 dragElement(document.querySelector("#art"));
 dragElement(document.querySelector("#games"));
 dragElement(document.querySelector("#music"));
+dragElement(document.querySelector("#browser"));
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
@@ -445,4 +446,52 @@ document.getElementById("musicclose").addEventListener("click", () => {
     document.getElementById("music").style.display = "none";
     audio.pause();
     isPlaying = false;
+});
+
+
+
+// Browser App
+const searchInput = document.getElementById("searchInput");
+const searchResults = document.getElementById("searchResults");
+const randomSiteBtn = document.getElementById("randomSiteBtn");
+
+const myWebsites = [
+    { name: "BlahajSite", url: "https://gabl18.github.io/BlahajSite/" },
+    { name: "SpaceSign", url: "https://gabl18.github.io/Give-Your-Website-a-Pulse/" },
+    { name: "gabl18.itch.io", url: "https://gabl18.itch.io/" }
+];
+
+searchInput.addEventListener("focus", () => {
+    searchResults.style.display = "block";
+});
+
+document.addEventListener("click", (e) => {
+    if (!e.target.closest(".searchContainer")) {
+        searchResults.style.display = "none";
+    }
+});
+
+searchInput.addEventListener("input", () => {
+    const filter = searchInput.value.toLowerCase();
+    const items = searchResults.getElementsByClassName("searchItem");
+
+    Array.from(items).forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(filter)) {
+            item.style.display = "flex";
+        } else {
+            item.style.display = "none";
+        }
+    });
+});
+
+randomSiteBtn.addEventListener("click", () => {
+    const randomIndex = Math.floor(Math.random() * myWebsites.length);
+    const selectedSite = myWebsites[randomIndex];
+    window.open(selectedSite.url, "_blank");
+});
+
+document.getElementById("browserclose").addEventListener("click", (e) => {
+    e.stopPropagation();
+    document.getElementById("browser").style.display = "none";
 });

@@ -3,4 +3,8 @@ Sfx
 Drawing Program using <canvas>
 Recycle Bin - "deleted" (abandoned) Projects
 
+Dass es am Handy auch gut aussieht?
 
+
+Devlog writing:
+I will add the music player back asap, but for now it got replaced with the browser, I want the music player to be at another spot
