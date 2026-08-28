@@ -1,10 +1,16 @@
 Music player (mp3 - Player)
 Sfx
+
+
+
 Drawing Program using <canvas>
-Recycle Bin - "deleted" (abandoned) Projects
+
+
+Recycle Bin - "deleted" (abandoned) Projects:
+    Mango Clicker
+    ChatGS
+    FrogPet
+    Press that Button togheter
 
 Dass es am Handy auch gut aussieht?
 
-
-Devlog writing:
-I will add the music player back asap, but for now it got replaced with the browser, I want the music player to be at another spot
