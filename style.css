@@ -6,7 +6,10 @@
 body {
     background-image: url(./images/background.jpg);
     background-size: cover;
-    overflow-y:hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
     /*background: #c1e8e8;*/
     /*background: linear-gradient(0deg,rgba(193, 232, 232, 1) 0%, rgba(177, 203, 230, 1) 100%);*/
 }
@@ -507,7 +510,7 @@ a:active {
     display: none;
     position: absolute;
     top: 100%; left: 0; right: 0;
-    background-color: rgba(20, 20, 20, 0.95);
+    background-color: rgba(20, 20, 20, 0.65);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -549,4 +552,45 @@ a:active {
 .browserBtn:hover {
     background-color: #76a5af;
     color: black;
+}
+
+
+
+/*Sizing for mobile*/
+@media screen and (max-width: 768px) {
+    
+    #desktopApps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding-top: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .appStyling {
+        width: auto;
+        margin: 0 auto;
+    }
+
+
+    /*Windows*/
+    .window {
+        width: 100vw !important;
+        height: calc(100vh - 35px) !important;
+        top: 35px !important; left: 0 !important;
+        transform: none !important;
+        border-radius: 0 !important;
+        border: none !important;
+        box-sizing: border-box;
+    }
+
+    .window.dragging {
+        transform: none !important;
+    }
+
+    .header {
+        border-radius: 0 !important;
+        cursor: default !important;
+    }
 }
