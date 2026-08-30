@@ -577,7 +577,7 @@ a:active {
     /*Windows*/
     .window:not(#welcome) {
         width: calc(100vw - 20px) !important;
-        height: calc(100vh - 70px) !important;
+        height: calc(100vh - 90px) !important;
         top: 60px !important; left: 10px !important;
         transform: none !important;
         box-sizing: border-box;
