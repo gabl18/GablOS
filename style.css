@@ -241,7 +241,7 @@ a:active {
 
 .iconImageDisplay {
     width: max-content;
-    height: 12%;
+    height: 8%;
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 2px;
@@ -577,7 +577,7 @@ a:active {
     /*Windows*/
     .window:not(#welcome) {
         width: calc(100vw - 20px) !important;
-        height: calc(100vh - 190px) !important;
+        height: calc(100dvh - 70px - env(safe-area-inset-bottom, 0px)) !important;
         top: 60px !important; left: 10px !important;
         transform: none !important;
         box-sizing: border-box;
