@@ -5,8 +5,19 @@ function updateTime() {
         }
         setInterval(updateTime, 1000);
 
+function updateWelcomeText() {
+  const welcomeText = document.getElementById("welcomeText");
+  if (!welcomeText) return;
 
+  if (window.innerWidth <= 768) {
+    welcomeText.innerHTML = 'Welcome to my site!<br>Tap through the different apps on the homepage to get to know what I do, close or open different "windows" and if you like my work and want to shoot me a Message, check out linked sites in About Me! <br><br> Hope you have fun!'
+  } else {
+    welcomeText.innerHTML = 'Welcome to my Operating System<br>Here you can click through my "apps", drag the Windows and get to know what I do. If you like my work and want to shoot me a Message, check out linked sites in the AboutMe App! <br><br> Hope you have fun!'
+  }
+}
 
+window.addEventListener("DOMContentLoaded", updateWelcomeText);
+window.addEventListener("resize", updateWelcomeText);
 
 // Make the DIV element draggable:
 dragElement(document.getElementById("welcome"));
@@ -37,6 +48,8 @@ function dragElement(element) {
 
   // Step 6: Define the `startDragging` function to capture the initial mouse position and set up event listeners.
   function startDragging(e) {
+    if (window.innerWidth <= 768) return;
+
     e = e || window.event;
     e.preventDefault();
     // Step 7: Get the mouse cursor position at startup.

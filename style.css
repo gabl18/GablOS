@@ -575,14 +575,17 @@ a:active {
 
 
     /*Windows*/
-    .window {
-        width: 100vw !important;
-        height: calc(100vh - 35px) !important;
-        top: 35px !important; left: 0 !important;
+    .window:not(#welcome) {
+        width: calc(100vw - 20px) !important;
+        height: calc(100vh - 70px) !important;
+        top: 60px !important; left: 10px !important;
         transform: none !important;
-        border-radius: 0 !important;
-        border: none !important;
         box-sizing: border-box;
+    }
+
+    #welcome {
+        width: 90% !important;
+        height: auto !important;
     }
 
     .window.dragging {
@@ -590,7 +593,38 @@ a:active {
     }
 
     .header {
-        border-radius: 0 !important;
         cursor: default !important;
+    }
+
+    #artContainer {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        width: 100% !important;
+        height: auto;
+        max-height: 120px;
+        border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #sidebar div {
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    .game-main-info{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .game-media {
+        width: 100%;
+    }
+
+    .searchContainer {
+        width: 95%;
     }
 }
