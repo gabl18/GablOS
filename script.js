@@ -162,10 +162,47 @@ var content = [
       `
   },
   {
+    title: "General Art",
+    content: `
+        <h3>General Art</h3>
+        <p>
+          I actually didn't know how to call this section, because what does "General Art" even mean? Could be anything - and that it is. Here are some very different art pieces, from drawing on fabric, stone, digitally or just completely something different.
+        </p>
+        <img class="imageDisplay" src="images/traditional-art/LethalCompanyThumbnail.png"/>
+        <img class="imageDisplay" src="images/traditional-art/Wolke.png" alt="test"/>
+        <img class="imageDisplay" src="images/traditional-art/Kirby.png"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (1).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (2).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (3).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (4).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (5).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (6).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (7).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (8).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (9).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (10).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (11).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/foto (12).jpg"/>
+        <img class="imageDisplay" src="images/traditional-art/SpiderGabl.png"/>
+        <img class="imageDisplay" src="images/traditional-art/Schulblatt.png"/>
+        <img class="imageDisplay" src="images/traditional-art/1 (1).jpeg"/>
+        <img class="imageDisplay" src="images/traditional-art/1 (2).jpeg"/>
+        <img class="imageDisplay" src="images/traditional-art/1 (3).jpeg"/>
+        <img class="imageDisplay" src="images/traditional-art/1 (4).jpeg"/>
+        <img class="imageDisplay" src="images/traditional-art/1 (5).jpeg"/>
+        <img class="imageDisplay" src="images/traditional-art/1 (6).jpeg"/>
+        <img class="imageDisplay" src="images/traditional-art/1 (7).jpeg"/>
+        <img class="imageDisplay" src="images/traditional-art/1 (8).jpeg"/>
+        <img class="imageDisplay" src="images/traditional-art/1 (9).jpeg"/>
+        <img class="imageDisplay" src="images/traditional-art/1 (10).jpeg"/>
+        <img class="imageDisplay" src="images/traditional-art/1 (11).jpeg"/>
+      `
+  },
+  {
     title: "Pixel-Art",
     content: `
         <h3>Pixel-Art</h3>
-        <p>I don't know why, but Pixel-Art always seemed to really draw me to it. After first trying it out due to a game-jam I found the love in it and have since improved a lot (hopefully lol).</p>
+        <p>I don't know why, but Pixel-Art always seemed to really draw me to it. After first trying it out during a game-jam I fell in love with it and have since improved a lot (hopefully lol).</p>
 
         <img class="imageDisplay" src="images/pixel-art/Computer.gif" alt="Computer pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/A Goatly Stare Main.png" alt="Goatly Stare pixel-art"/>
@@ -188,32 +225,6 @@ var content = [
         <img class="imageDisplay" src="images/pixel-art/Special_Cards_Balatro_AmongUS.png" alt="Card pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/frog.png" alt="frog pixel-art"/>
         <img class="imageDisplay" src="images/pixel-art/june_frog.png" alt="pride-frog pixel-art"/>
-      `
-  },
-  {
-    title: "Traditional Art",
-    content: `
-        <h3>Traditional Art</h3>
-        <p>
-          I actually didn't know how to call this section, because what does "Traditional Art" even mean? Could be anything - and that it is. Here are some very different art pieces, from drawing on fabric, stone, digitally or just completely something different.
-        </p>
-        <img class="imageDisplay" src="images/traditional-art/LethalCompanyThumbnail.png"/>
-        <img class="imageDisplay" src="images/traditional-art/Wolke.png" alt="test"/>
-        <img class="imageDisplay" src="images/traditional-art/Kirby.png"/>
-        <img class="imageDisplay" src="images/traditional-art/foto (1).jpg"/>
-        <img class="imageDisplay" src="images/traditional-art/foto (2).jpg"/>
-        <img class="imageDisplay" src="images/traditional-art/foto (3).jpg"/>
-        <img class="imageDisplay" src="images/traditional-art/foto (4).jpg"/>
-        <img class="imageDisplay" src="images/traditional-art/foto (5).jpg"/>
-        <img class="imageDisplay" src="images/traditional-art/foto (6).jpg"/>
-        <img class="imageDisplay" src="images/traditional-art/foto (7).jpg"/>
-        <img class="imageDisplay" src="images/traditional-art/foto (8).jpg"/>
-        <img class="imageDisplay" src="images/traditional-art/foto (9).jpg"/>
-        <img class="imageDisplay" src="images/traditional-art/foto (10).jpg"/>
-        <img class="imageDisplay" src="images/traditional-art/foto (11).jpg"/>
-        <img class="imageDisplay" src="images/traditional-art/foto (12).jpg"/>
-        <img class="imageDisplay" src="images/traditional-art/SpiderGabl.png"/>
-        <img class="imageDisplay" src="images/traditional-art/Schulblatt.png"/>
       `
   },
   {

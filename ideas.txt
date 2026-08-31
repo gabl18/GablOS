@@ -1,7 +1,8 @@
-Music player (mp3 - Player)
+Bring back Music player (mp3 - Player)
+
 Sfx
 
-
+Better image scaling maybe on mobile art section
 
 Drawing Program using <canvas>
 
@@ -14,3 +15,4 @@ Recycle Bin - "deleted" (abandoned) Projects:
 
 Dass es am Handy auch gut aussieht?
 
+Random bg every load?
