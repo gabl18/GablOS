@@ -39,6 +39,8 @@ a:active {
     border-color: black;
     flex-direction: column;
     filter: drop-shadow(0 0 6px black); 
+
+    transition: transform 0.15s ease-out, filter 0.15s ease-out;
 }
 
 .window.dragging {
@@ -70,6 +72,10 @@ a:active {
 
 #top-bar > * {
     pointer-events: auto;
+}
+
+#time-element:hover {
+    cursor: pointer;
 }
 
 .header {

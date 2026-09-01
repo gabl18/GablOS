@@ -5,7 +5,7 @@ I think that this is very cool, however, I don't really really like the font and
 
 Reason 2
 
-I can tell there is a lot of effort put into this project because you made all the art yourself! I really like your art style, so I think this project gets a perfect score on technical merit. On originality, however, the art and content are probably the most original things in this project because the idea of a webos is probably the most overused theme in the entire stardance platform. I like the devlogs, though, because they do a good job of showing progress, and I can also see how your thing is being built. The readme is good, I guess, but it's just an image in some text; you could have made it more detailed and more contentful. I was able to use it, but maybe handle widescreen monitors better, because it was not that appealing visually and difficult to use when so small.
+I can tell there is a lot of effort put into this project because you made all the art yourself! I really like your art style, so I think this project gets a perfect score on technical merit. On originality, however, the art and content are probably the most original things in this project because the idea of a webos is probably the most overused theme in the entire stardance platform. I like the devlogs, though, because they do a good job of showing progress, and I can also see how your thing is being built. The readme is gonod, I guess, but it's just an image i some text; you could have made it more detailed and more contentful. I was able to use it, but maybe handle widescreen monitors better, because it was not that appealing visually and difficult to use when so small.
 
 Reason 3
 

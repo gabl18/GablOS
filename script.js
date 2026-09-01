@@ -1,9 +1,28 @@
+var timeFormat = 'en-gb';
+
 function updateTime() {
-            var currentTime = new Date().toLocaleString('en-gb');
-            var timeText = document.querySelector("#time-element");
-            timeText.innerHTML = currentTime
-        }
-        setInterval(updateTime, 1000);
+  var currentTime = new Date().toLocaleString(timeFormat);
+  var timeText = document.querySelector("#time-element");
+  if (timeText) {
+    timeText.innerHTML = currentTime;
+  }
+}
+setInterval(updateTime, 1000);
+
+var timeElement = document.querySelector("#time-element");
+if (timeElement) {
+  timeElement.addEventListener("click", detectTimeFormat);
+}
+
+function detectTimeFormat() {
+  if (timeFormat === 'en-gb') {
+    timeFormat = 'en-US';
+  } else {
+    timeFormat = 'en-gb';
+  }
+  updateTime();
+}
+
 
 function updateWelcomeText() {
   const welcomeText = document.getElementById("welcomeText");
@@ -50,6 +69,8 @@ function dragElement(element) {
   function startDragging(e) {
     if (window.innerWidth <= 768) return;
 
+    if (e.target.classList.contains("closebutton")) return;
+    
     e = e || window.event;
     e.preventDefault();
     // Step 7: Get the mouse cursor position at startup.
