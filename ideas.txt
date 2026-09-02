@@ -4,8 +4,8 @@ Sfx
 
 Better image scaling maybe on mobile art section
 
-Drawing Program using <canvas>
-
+Eigene Contact app, wo man maybe auch fotos schicken kann? 
+    Drawing Program using <canvas>
 
 Recycle Bin - "deleted" (abandoned) Projects:
     Mango Clicker

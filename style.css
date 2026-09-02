@@ -634,3 +634,13 @@ a:active {
         width: 95%;
     }
 }
+
+/*testing*/
+#contact {
+    top: 35%; 
+    left: 80%; 
+    width: 30%;
+    height: 50%;
+    font-family: monospace;
+    font-size:large;
+}
