@@ -16,3 +16,6 @@ Recycle Bin - "deleted" (abandoned) Projects:
 Dass es am Handy auch gut aussieht?
 
 Random bg every load?
+
+
+Weird transparency glitch fix

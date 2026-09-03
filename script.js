@@ -45,6 +45,7 @@ dragElement(document.querySelector("#art"));
 dragElement(document.querySelector("#games"));
 dragElement(document.querySelector("#music"));
 dragElement(document.querySelector("#browser"));
+dragElement(document.querySelector("#contact"));
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
@@ -540,3 +541,39 @@ document.getElementById("browserclose").addEventListener("click", (e) => {
     e.stopPropagation();
     document.getElementById("browser").style.display = "none";
 });
+
+
+
+//Music window
+const musicToggleBtn = document.getElementById("musicToggleBtn");
+const musicWindow = document.getElementById("music");
+
+if (musicToggleBtn && musicWindow) {
+  musicToggleBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    const isOpen = musicWindow.classList.contains("open");
+    
+    if (isOpen) {
+      musicWindow.classList.remove("open");
+    } else {
+      focusWindow(musicWindow);
+      musicWindow.classList.add("open");
+    }
+  });
+}
+
+const musicCloseBtn = document.getElementById("musicclose");
+if (musicCloseBtn) {
+  musicCloseBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    musicWindow.classList.remove("open");
+  });
+}
+
+const powerBtn = document.getElementById("powerBtn");
+if (powerBtn) {
+  powerBtn.addEventListener("click", () => {
+    openWindow(document.getElementById("welcome"));
+  });
+}
