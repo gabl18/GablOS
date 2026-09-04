@@ -69,7 +69,6 @@ function dragElement(element) {
   // Step 6: Define the `startDragging` function to capture the initial mouse position and set up event listeners.
   function startDragging(e) {
     if (window.innerWidth <= 768) return;
-
     if (e.target.classList.contains("closebutton")) return;
     
     e = e || window.event;
@@ -82,11 +81,11 @@ function dragElement(element) {
     initialY = e.clientY;
     // Step 8: Set up event listeners for mouse movement (`elementDrag`) and mouse button release (`closeDragElement`).
     document.onmouseup = stopDragging;
-    document.onmousemove = dragElement;
+    document.onmousemove = elementDrag;
   }
 
   // Step 9: Define the `elementDrag` function to calculate the new position of the element based on mouse movement.
-  function dragElement(e) {
+  function elementDrag(e) {
     e = e || window.event;
     e.preventDefault();
     // Step 10: Calculate the new cursor position.
@@ -123,7 +122,14 @@ function openWindow(windowElement) {
 }
 
 function closeWindow(windowElement) {
-  windowElement.style.display = "none";
+  if (!windowElement) return;
+
+  windowElement.classList.add("closing");
+
+  setTimeout(function() {
+    windowElement.style.display = "none";
+    windowElement.classList.remove("closing");
+  }, 150);
 }
 
 function focusWindow(windowElement) {
@@ -155,7 +161,14 @@ document.querySelectorAll(".appStyling").forEach(function(app) {
     var targetWindow = document.getElementById(windowId);
     
     if (targetWindow) {
+
+      var isOpen = window.getComputedStyle(targetWindow).display !== "none";
+      
+      if (isOpen) {
+        closeWindow(targetWindow);
+      } else {
       openWindow(targetWindow);
+      }
     }
   });
 });
@@ -487,9 +500,7 @@ audio.volume = volumeSlider.value / 100;
 
 // Fenster schließen
 document.getElementById("musicclose").addEventListener("click", () => {
-    e.stopPropagation();
     playBtn.innerText = "▶";
-    document.getElementById("music").style.display = "none";
     audio.pause();
     isPlaying = false;
 });
@@ -537,11 +548,6 @@ randomSiteBtn.addEventListener("click", () => {
     window.open(selectedSite.url, "_blank");
 });
 
-document.getElementById("browserclose").addEventListener("click", (e) => {
-    e.stopPropagation();
-    document.getElementById("browser").style.display = "none";
-});
-
 
 
 //Music window
@@ -552,28 +558,29 @@ if (musicToggleBtn && musicWindow) {
   musicToggleBtn.addEventListener("click", (e) => {
     e.stopPropagation();
 
-    const isOpen = musicWindow.classList.contains("open");
-    
+    var isOpen = window.getComputedStyle(musicWindow).display !== "none";
+
     if (isOpen) {
-      musicWindow.classList.remove("open");
+      closeWindow(musicWindow);
     } else {
-      focusWindow(musicWindow);
-      musicWindow.classList.add("open");
+      openWindow(musicWindow);
     }
   });
 }
 
-const musicCloseBtn = document.getElementById("musicclose");
-if (musicCloseBtn) {
-  musicCloseBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    musicWindow.classList.remove("open");
-  });
-}
-
 const powerBtn = document.getElementById("powerBtn");
-if (powerBtn) {
-  powerBtn.addEventListener("click", () => {
-    openWindow(document.getElementById("welcome"));
+const welcomeWindow = document.getElementById("welcome");
+
+if (powerBtn && welcomeWindow) {
+  powerBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    var isOpen = window.getComputedStyle(welcomeWindow).display !== "none";
+
+    if (isOpen) {
+      closeWindow(welcomeWindow);
+    } else {
+      openWindow(welcomeWindow);
+    }
   });
 }
