@@ -103,6 +103,7 @@
         max-width: 150px !important;
         height: auto;
         padding: 15px;
+        z-index: 0 !important;
     }
 
     #music {
