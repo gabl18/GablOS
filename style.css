@@ -167,7 +167,7 @@ a:active {
     flex-direction: column;
     filter: drop-shadow(0 0 6px black); 
 
-    animation: windowPop 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: windowPop 0.15s;
 
     transition: transform 0.12s ease-out, filter 0.12s ease-out;
 }
@@ -574,6 +574,8 @@ a:active {
     font-size: large;
 }
 
+
+
 .browserWrapper {
     padding: 30px 20px;
     display: flex;
@@ -667,6 +669,7 @@ a:active {
     padding: 10px 16px;
     text-decoration: none;
     transition: background-color 0.15s ease;
+    color: white;
 }
 
 .searchItem:hover {
