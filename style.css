@@ -25,6 +25,12 @@
     }
 }
 
+@supports not (backdrop-filter: blur(1px)) {
+    .window {
+        background-color: rgba(10, 10, 10, 0.75);
+    }
+}
+
 /*Sizing for mobile*/
 @media screen and (max-width: 768px) {
     
@@ -126,6 +132,12 @@
         max-width: 100%;
         width: 100%
     }
+
+    .imageDisplay {
+    width: 100% !important;
+    height: max-content;
+    border-radius: 4px;
+    }
 }
 
 
@@ -166,6 +178,9 @@ a:active {
     border-color: black;
     flex-direction: column;
     filter: drop-shadow(0 0 6px black); 
+
+    will-change: transform, opacity;
+    transform-style: preserve-3d;
 
     animation: windowPop 0.15s;
 
@@ -481,8 +496,8 @@ a:active {
 
 #music {
     position: absolute;
-    left: 90%;
-    top: 85%;
+    left: 80%;
+    top: 80%;
     width: 300px;
     display: none;
 
@@ -617,6 +632,7 @@ a:active {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    color: black;
     border-radius: 25px;
     padding: 8px 16px;
     transition: all 0.2 ease;
@@ -632,7 +648,7 @@ a:active {
 }
 
 .searchBar:focus-within {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(49, 49, 49, 0.25);
     border-color: #76a5af;
     box-shadow: 0 0 8px rgba(118, 165, 175, 0.5);
 }
@@ -775,4 +791,17 @@ a:active {
     width: 40px;
     height: 10%;
     object-fit: contain;
+}
+
+
+
+/* bluescreen */
+#blue-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0078d7;;
 }
