@@ -569,18 +569,72 @@ if (musicToggleBtn && musicWindow) {
 }
 
 const powerBtn = document.getElementById("powerBtn");
-const welcomeWindow = document.getElementById("welcome");
+const blueOverlay = document.getElementById("blue-overlay");
 
-if (powerBtn && welcomeWindow) {
+const blueImages = [
+  "images/bluescreen.png",
+  "images/bluescreen2.png",
+  "images/bluescreen3.png"
+];
+
+const mobileBlueImages = [
+  "images/mobile-bluescreen.png"
+];
+
+const blueSound = new Audio("audio/error.mp3");
+
+let blueTimeout = null;
+
+function closeBlue() {
+  if (blueOverlay) {
+    blueOverlay.style.display = "none";
+    blueOverlay.style.backgroundImage = "none";
+  }
+  if (blueTimeout) {
+    clearTimeout(blueTimeout);
+    blueTimeout = null;
+  }
+}
+
+if (powerBtn && blueOverlay) {
   powerBtn.addEventListener("click", (e) => {
     e.stopPropagation();
 
-    var isOpen = window.getComputedStyle(welcomeWindow).display !== "none";
+    const isMobile = window.innerWidth <= 768;
+    const currentImages = isMobile ? mobileBlueImages : blueImages;
 
-    if (isOpen) {
-      closeWindow(welcomeWindow);
-    } else {
-      openWindow(welcomeWindow);
+    const randomIndex = Math.floor(Math.random() * currentImages.length);
+    const selectedImage = currentImages[randomIndex];
+
+    blueOverlay.style.backgroundImage = `url('${selectedImage}')`;
+
+    if ("vibrate" in navigator) {
+      navigator.vibrate(300);
     }
+
+    blueSound.currentTime = 0;
+    blueSound.play().catch(err => console.log("Audio doesn't work.", err));
+
+    blueOverlay.style.display = "flex";
+
+    if (blueTimeout) clearTimeout(blueTimeout);
+
+    blueTimeout = setTimeout(() => {
+      closeBlue();
+    }, 3500);
   });
 }
+
+if (blueOverlay) {
+  blueOverlay.addEventListener("click", () => {
+    closeBlue();
+  });
+}
+
+window.addEventListener("keydown", (e) => {
+  if (blueOverlay && blueOverlay.style.display === "flex") {
+    if (e.key === "Escape" || e.key === "Enter" || e.key === " ") {
+      closeBlue();
+    }
+  }
+});
