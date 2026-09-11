@@ -134,9 +134,9 @@
     }
 
     .imageDisplay {
-    width: 100% !important;
-    height: max-content;
-    border-radius: 4px;
+    width: min-content;
+    height: 40%;
+    border-radius: 6px;
     }
 }
 
@@ -316,7 +316,7 @@ a:active {
 }
 
 #art {
-    top: 70%; 
+    top: 68%; 
     left: 35%; 
     width: 55%;
     height: 50%;
@@ -743,6 +743,8 @@ a:active {
     justify-content: center;
     align-items: center;
     z-index: 99999;
+
+    padding-top: 10px; padding-bottom: 10px;
 }
 
 #musicToggleBtn {
@@ -772,6 +774,8 @@ a:active {
     justify-content: center;
     align-items: center;
     z-index: 99999;
+
+    padding-top: 10px; padding-bottom: 10px;
 }
 
 #powerBtn {

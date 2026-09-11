@@ -19,3 +19,36 @@ Random bg every load?
 
 
 Weird transparency glitch fix
+
+
+
+# Last Devlog before ship#2
+Well, since last time I have really been cleaning up things. 
+
+I created icons for the bottom "taskbars" and also created a new favicon yet again lol. Furthermore fixed some weird glitches and optimized the website more for mobile. 
+
+Then also made many little css changes that I don't remember all of anymore - but everything looks somewhat good and I am very pleased with the website so far. Aditionally made a little surprise when you click on the home-button in the bottom "taskbar" for you to find out (;. 
+
+All in all just much cleanup and little changes for ship number 2.
+
+
+# GablOS ship#2
+Crazy how long ago the last ship was, but since then I have added a bunch of new features, implemented a lot of feedback and fiexed a lot of bugs and weird stuff.
+
+This Website is a bit of a personal site or portfolio that has like a really interesting desing because it's not like the usual website but built up like a simple OS that has clickable App icons that open windows and such. Now the site is finally also useable on mobile devices and yeah, all in all I am really satisfied with how it turned out.
+
+[https://www.gabl.works](https://www.gabl.works/)
+
+Features (newly added in bold):
+* Top-Bar that displays Time - **which can cycle through 12- and 24 hour format by clicking on it**
+* Welcome Screen
+* About Me - including Social links
+* Art - much different Art created by me
+* Games - display of games I have worked on
+* **Browser - linking sites created by me**
+* Music Player - plays some songs friends made or that got used in games
+* **Bottom-"bar" with a home-button which has a surprise upon clicking (; and music button to open the music-player**
+
+* **Smooth animations for windows**
+* **Adaptation for mobile devices and useable scaling**
+* **Custom domain**
